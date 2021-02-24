@@ -667,3 +667,18 @@ div {
     color: white;
     text-align: center;
   }
+
+  .background-img {
+    left: 50%;
+  	margin-left: -50vw;
+  	margin-right: -50vw;
+  	max-width: 100vw;
+  	position: relative;
+  	right: 50%;
+  	width: 98vw;
+     padding: 0rem;
+     display: table;
+     height: 100%;
+    background-image:url("pattern.svg");
+    background-repeat:no-repeat;
+  }
