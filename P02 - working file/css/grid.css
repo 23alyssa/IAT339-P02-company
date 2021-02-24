@@ -1,0 +1,265 @@
+/* This is a style guide for the grid structure layout of the style guide*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container, .flex-container-nav, .flex-container-feature, .flex-container-products, .flex-container-order-sum {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+
+  .flex-container-color{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .flex-item-color {
+    flex-grow: 1;
+    flex-basis: 30em;
+  }
+
+  .flex-container-feature, .flex-container-order-sum {
+    margin-top: 3em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .flex-item-feature-img {
+    flex-grow: 1;
+    flex-basis: 30em;
+    padding-top: 1em;
+    margin-right: 3em;
+  }
+
+  .flex-item-feature-txt {
+    flex-grow: 1;
+    flex-basis: 70em;
+  }
+
+  .flex-container-nav {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flex-item-nav, .flex-container-brand {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .flex-item-xsm {
+    flex-basis: 7em;
+    align-self: center;
+    /* cite: how to use flex basis from https://css-tricks.com/almanac/properties/f/flex-basis/ */
+  }
+
+  .flex-item-sm {
+    flex-basis: 10em;
+    margin-right: 10em;
+    /* cite: how to use flex basis from https://css-tricks.com/almanac/properties/f/flex-basis/ */
+  }
+
+  .flex-item-brand {
+    flex-basis: 10em;
+  }
+
+  .flex-item-md {
+    flex-basis: 15em;
+  }
+
+  .flex-item-lg {
+    flex-basis: 30em;
+    padding-top: 1em;
+    margin-right: 3em;
+    /* cite: how to use flex basis from https://css-tricks.com/almanac/properties/f/flex-basis/ */
+  }
+
+  .flex-item-xlg {
+    flex-basis: 70em;
+    /* cite: how to use flex basis from https://css-tricks.com/almanac/properties/f/flex-basis/ */
+  }
+
+  /* cite: how to make a product layout from https://css-tricks.com/designing-a-product-page-layout-with-flexbox/ */
+  .flex-container-products {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .flex-item-product {
+    flex-grow: 1;
+    flex-basis: 3em;
+    margin: 1.5em;
+  }
+
+  .flex-item-cart {
+    flex-basis: 10em;
+    margin-right: 3em;
+    /* cite: how to use flex basis from https://css-tricks.com/almanac/properties/f/flex-basis/ */
+  }
+
+  .flex-item-cart-price {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+  }
+
+
+
+  /* cite: used this form as an example structure from https://www.w3schools.com/howto/howto_css_checkout_form.asp */
+
+.flex-container-payment {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -1em;
+
+}
+
+.flex-item-payment-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.flex-item-payment-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.flex-item-payment-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+
+}
+
+.flex-item-payment-25,
+.flex-item-payment-50,
+.lex-item-payment-75 {
+  padding: 0 1.2em;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+.footer-list-inline {
+  display: inline-flex;
+}
+
+.footer-list-inline-item {
+  flex-grow: 1;
+}
+
+/* 
+  MEDIA QUERY -------------------
+*/
+
+
+@media screen and (max-width: 38.625em) {
+
+  .flex-container {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .flex-item-nav {
+    margin-left: 5em;
+    margin-top: 1em;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .flex-container-feature, .flex-container-order-sum {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer-list-inline {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-list-inline-item {
+    flex-basis: 2em;
+  }
+
+}
+@media screen and (max-width: 55.125em) {
+
+  .flex-container-feature, .flex-container-order-sum {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 62.5em) {
+
+  .flex-container-feature, .flex-container-order-sum {
+    align-content: flex-start;
+    flex-direction: row;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 75.625em) {
+
+  .flex-container-products {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .flex-item-product {
+    flex-grow: 1;
+    flex-basis: 15em;
+  }
+
+  .flex-container-payment{
+    flex-direction: column-reverse;
+  }
+  .flex-item-payment-25 {
+    margin-bottom: 1.2em;
+  }
+
+}
+
+
+
+
+
+  
