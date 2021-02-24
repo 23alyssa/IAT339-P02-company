@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--cite: how to change meta viewport from https://web.dev/responsive-web-design-basics/-->
+
+  <title>The Book Worm - Books</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+
+  <!-- FONT IMPORT BY LINK-->
+  <!--cite: how to change fonts used by google via link from https://www.w3schools.com/css/css_font_google.asp-->
+
+  <!-- Dosis Extra Light, Light, Regular, Medium, Semi-Bold, Bold-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Open Sans Light, Regular, Regular Italics, Semi Bold, Bold-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- cite flexblox navbar right aligned from https://freshman.tech/flexbox-navbar/-->
+  <header class="flex-container-nav">
+
+    <div class="flex-item-xsm">
+      <img class="nav-logo" src="img/logo-header.svg" alt="The Book Work Logo">
+    </div>
+
+    <nav class="flex-item-nav">
+      <a class="txt-nav" href="">Books</a>
+      <a class="txt-nav" href="">Events</a>
+      <a class="txt-nav" href="">About</a>
+      <a class="txt-nav" href="">Contact</a>
+      <a class="txt-nav" href=""><img id="nav-cart" src="img/Icons/nav-cart.svg" alt="cart icon"></a>
+    </nav>
+
+  </header>
+
+
+  <!-- FEATURE BOOK OF MONTH-->
+  <section class="flex-container-feature">
+      <div class="flex-container-feature feature-background">
+        <div class="flex-item-feature-img">
+          <a href="#" target="_blank">
+            <img class="feature-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          </a>
+        </div>
+
+        <div class="flex-item-feature-txt">
+          <h3>Feature Book of the Month</h3>
+          <a class="product-list-title" href="#">The Day You Begin</a>
+          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+          <p>
+            National Book Award winner Jacqueline Woodson and two-time Pura Belpré Illustrator Award winner Rafael López have teamed up to create a poignant, yet heartening book about finding courage to connect, even when you feel scared and alone.
+          </p>
+          <a class="btn-basic" href="#">Learn More</a>
+        </div>
+      </div>
+  </section>
+
+  <!-- ASIDE FILTERS -->
+  <div class="flex-container">
+
+    <aside class="aside-filter flex-item-lg">
+      <form class="aside-form" method="post" action="#">
+        <h4>Please select an option:</h4>
+        <label class="form-check-container">0-2 years
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        
+        <label class="form-check-container">3-5 years
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        
+        <label class="form-check-container">6-8 years
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        
+        <label class="form-check-container">9-12 years
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </form>
+    </aside>
+
+    
+    <!-- PRODUCT -->    
+    <section>
+      <!-- PRODUCT SECTION IMAGINATION -->
+      <section>
+        <h2 class="product-section">Filled with Creativity</h2>
+
+        <div class="flex-container-products">
+
+          <!-- book 1 -->
+          <div class="flex-item-product">
+            <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+            target="_blank">
+            <img class="product-img-link" src="img/sample-book.jpg"
+              alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+            </a>
+
+            <a class="product-list-title" href="#">The Day You Begin</a>
+            <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+            <div>
+              <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+            </div>
+
+            <h5 class="product-list-price">$25.99</h5>
+            <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+                alt="shopping cart icon"></a>
+          </div>
+
+          <!-- book 2 -->
+          <div class="flex-item-product">
+            <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+            target="_blank">
+            <img class="product-img-link" src="img/sample-book.jpg"
+              alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+            </a>
+
+            <a class="product-list-title" href="#">The Day You Begin</a>
+            <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+            <div>
+              <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+            </div>
+
+            <h5 class="product-list-price">$25.99</h5>
+            <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+                alt="shopping cart icon"></a>
+          </div>
+
+
+          <!-- book 3 -->
+          <div class="flex-item-product">
+            <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+            target="_blank">
+            <img class="product-img-link" src="img/sample-book.jpg"
+              alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+            </a>
+
+            <a class="product-list-title" href="#">The Day You Begin</a>
+            <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+            <div>
+              <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+            </div>
+
+            <h5 class="product-list-price">$25.99</h5>
+            <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+                alt="shopping cart icon"></a>
+          </div>
+
+
+          <!-- book 4 -->
+          <div class="flex-item-product">
+            <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+            target="_blank">
+            <img class="product-img-link" src="img/sample-book.jpg"
+              alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+            </a>
+
+            <a class="product-list-title" href="#">The Day You Begin</a>
+            <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+            <div>
+              <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+            </div>
+
+            <h5 class="product-list-price">$25.99</h5>
+            <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+                alt="shopping cart icon"></a>
+          </div>
+
+        </div>
+      </section>
+
+
+     <!-- PRODUCT SECTION ADVENTURE -->
+    <section>
+      <h2 class="product-section">Going on an Adventure</h2>
+
+      <div class="flex-container-products">
+
+        <!-- book 1 -->
+        <div class="flex-item-product">
+          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+          target="_blank">
+          <img class="product-img-link" src="img/sample-book.jpg"
+            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          </a>
+
+          <a class="product-list-title" href="#">The Day You Begin</a>
+          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+          <div>
+            <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+          </div>
+
+          <h5 class="product-list-price">$25.99</h5>
+          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+              alt="shopping cart icon"></a>
+        </div>
+
+        <!-- book 2 -->
+        <div class="flex-item-product">
+          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+          target="_blank">
+          <img class="product-img-link" src="img/sample-book.jpg"
+            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          </a>
+
+          <a class="product-list-title" href="#">The Day You Begin</a>
+          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+          <div>
+            <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+          </div>
+
+          <h5 class="product-list-price">$25.99</h5>
+          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+              alt="shopping cart icon"></a>
+        </div>
+
+
+        <!-- book 3 -->
+        <div class="flex-item-product">
+          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+          target="_blank">
+          <img class="product-img-link" src="img/sample-book.jpg"
+            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          </a>
+
+          <a class="product-list-title" href="#">The Day You Begin</a>
+          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+          <div>
+            <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+          </div>
+
+          <h5 class="product-list-price">$25.99</h5>
+          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+              alt="shopping cart icon"></a>
+        </div>
+
+
+        <!-- book 4 -->
+        <div class="flex-item-product">
+          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+          target="_blank">
+          <img class="product-img-link" src="img/sample-book.jpg"
+            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          </a>
+
+          <a class="product-list-title" href="#">The Day You Begin</a>
+          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+          <div>
+            <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+          </div>
+
+          <h5 class="product-list-price">$25.99</h5>
+          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+              alt="shopping cart icon"></a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- PRODUCT SECTION ADVENTURE -->
+    <section>
+      <h2 class="product-section">Made for Everyone</h2>
+
+      <div class="flex-container-products">
+
+        <!-- book 1 -->
+        <div class="flex-item-product">
+          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+          target="_blank">
+          <img class="product-img-link" src="img/sample-book.jpg"
+            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          </a>
+
+          <a class="product-list-title" href="#">The Day You Begin</a>
+          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+          <div>
+            <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+          </div>
+
+          <h5 class="product-list-price">$25.99</h5>
+          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+              alt="shopping cart icon"></a>
+        </div>
+
+        <!-- book 2 -->
+        <div class="flex-item-product">
+          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+          target="_blank">
+          <img class="product-img-link" src="img/sample-book.jpg"
+            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          </a>
+
+          <a class="product-list-title" href="#">The Day You Begin</a>
+          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+          <div>
+            <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+          </div>
+
+          <h5 class="product-list-price">$25.99</h5>
+          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+              alt="shopping cart icon"></a>
+        </div>
+
+
+        <!-- book 3 -->
+        <div class="flex-item-product">
+          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+          target="_blank">
+          <img class="product-img-link" src="img/sample-book.jpg"
+            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          </a>
+
+          <a class="product-list-title" href="#">The Day You Begin</a>
+          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+          <div>
+            <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+          </div>
+
+          <h5 class="product-list-price">$25.99</h5>
+          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+              alt="shopping cart icon"></a>
+        </div>
+
+
+        <!-- book 4 -->
+        <div class="flex-item-product">
+          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+          target="_blank">
+          <img class="product-img-link" src="img/sample-book.jpg"
+            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          </a>
+
+          <a class="product-list-title" href="#">The Day You Begin</a>
+          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+
+
+          <div>
+            <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+          </div>
+
+          <h5 class="product-list-price">$25.99</h5>
+          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+              alt="shopping cart icon"></a>
+        </div>
+        
+      </div>
+    </section>
+  </section>
+  
+  </div>
+
+  <div class="footer-basic">
+    <footer>
+        <ul class="footer-list-inline">
+            <li class="footer-list-inline-item"><a href="">Books</a></li>
+            <li class="footer-list-inline-item"><a href="">Events</a></li>
+            <li class="footer-list-inline-item"><a href="">About</a></li>
+            <li class="footer-list-inline-item"><a href="">Contact</a></li>
+
+            <li class="footer-list-inline-item"><a href="index.html">Style Guide</a></li>
+            <li class="footer-list-inline-item"><a href="product-list-template.html">Product Template</a></li>
+            <li class="footer-list-inline-item"><a href="checkout-template.html">Checkout Template</a></li>
+        </ul>
+        <p class="copyright">The Book Worm © 2021</p>
+    </footer>
+  </div>  
+
+</body>
