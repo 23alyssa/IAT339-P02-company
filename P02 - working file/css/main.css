@@ -148,18 +148,17 @@ div {
   */
 
   .in-txt-link {
-    text-decoration: underline;
-    color: #434342;
+    text-decoration: none;
+    color: #5BAFE4;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: bold;
     font-size: 1.1rem;
     line-height: 1.6rem;
   }
 
   .in-txt-link:hover, .in-txt-link:focus {
-    text-decoration: none;
-    color: #5BAFE4;
+    text-decoration: underline;
+    color: #4596CA;
   }
 
   .btn-basic {
