@@ -1,0 +1,664 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+div {
+    display: block;
+  }
+  
+  body {
+    font-family: sans-serif;
+    padding: 2rem;
+  }
+  
+  .element {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: #A7A7A7;
+  }
+  
+  .element-bottom {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    border-bottom-width: 0.15rem;
+    border-bottom-style: solid;
+    border-bottom-color: #A7A7A7;
+  }
+  
+  code {
+    background-color: #EEE;
+    padding: 0.5rem;
+    display: block;
+  }
+  
+  /* 
+    BRANDING ELEMENTS -------------------
+  */
+  
+  .color-swatch {
+    padding: 2rem;
+  }
+  
+  
+  .color-item-top {
+    height: 4em;
+    border-radius: 2rem 2rem 0rem 0rem;
+  }
+  
+  .color-item-bottom {
+    height: 4em;
+    border-radius: 0rem 0rem 2rem 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .color-p1 {
+    background-color: #FD5F60;
+  }
+  
+  .color-p1s {
+    background-color: #DC4748;
+  }
+  
+  .color-p2 {
+    background-color: #5BAFE4;
+  }
+  
+  .color-p2s {
+    background-color: #4596CA;
+  }
+  
+  .color-a1 {
+    background-color: #7CD86E;
+  }
+  
+  .color-a1s {
+    background-color: #6ABC5E;
+  }
+  
+  .color-a2 {
+    background-color: #FFDC5B;
+  }
+  
+  .color-a2s {
+    background-color: #EBC63E;
+  }
+  
+  .color-n1 {
+    background-color: #434342;
+  }
+  
+  .color-n1s {
+    background-color: #1D1D1B;
+  }
+  
+  .color-n2 {
+    background-color: #A7A7A7;
+  }
+  
+  .color-n2s {
+    background-color: #F2F2F2;
+  }
+  
+  .logo-item, .brand-item {
+    padding: 2rem;
+  }
+  
+  .brand-pattern {
+    /* cite: full image bleed from https://css-tricks.com/full-bleed/ */
+    opacity: 40%;
+    z-index: -1;
+    margin-top: 7em;
+    padding: 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  
+  .notes {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  
+  
+  
+  /* 
+    INTERACTIVE ELEMENTS -------------------
+  */
+  
+  .in-txt-link {
+    text-decoration: underline;
+    color: #434342;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  
+  .in-txt-link:hover, .in-txt-link:focus {
+    text-decoration: none;
+    color: #5BAFE4;
+  }
+  
+  .btn-basic {
+    background-color: #FD5F60;
+    color: white;
+    padding: 0.6rem 1.5rem 0.6rem 1.3rem;
+    cursor: pointer;
+  
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1rem;
+  
+    transition-duration: 0.2s;
+    border-radius: 2rem 2rem 2rem 2rem;
+  }
+  
+  .btn-basic:hover, .btn-basic:focus {
+    color: white;
+    background-color: #DC4748;
+  }
+  
+  .btn-add-cart {
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.5rem 0.6rem 1.3rem;
+    background: #FD5F60;
+    border-radius: 2rem 2rem 2rem 2rem;
+  
+    color: white;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1rem;
+  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+  }
+  
+  /* cite: how to add icon to button from https://moderncss.dev/icon-button-css-styling-guide */
+  
+  .btn-add-cart:hover, .btn-add-cart:focus {
+    background: #DC4748;
+  }
+  
+  .icon {
+    max-width: 23%;
+  }
+  
+  .nav-logo {
+    max-width: 80%;
+  }
+  
+  #nav-margin {
+    margin-top: 5em;
+  }
+  
+  #nav-cart {
+    max-width: 60%;
+  }
+  
+  .txt-nav:hover, .txt-nav:focus {
+    color: #FD5F60;
+  }
+  
+  .btn-submit, .btn-reset {
+    text-shadow:none;
+    border-style: none;
+    background-color: #5BAFE4;
+    color: white;
+    padding: 0.7rem;
+    cursor: pointer;
+  
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+  
+    transition-duration: 0.2s;
+    border-radius: 2rem 2rem 2rem 2rem;
+  }
+  
+  .btn-submit:hover, .btn-submit:focus {
+    background-color: #4596CA;
+  }
+  
+  .btn-reset {
+    background-color: #434342;
+  }
+  
+  .btn-reset:hover, .btn-reset:focus {
+    background-color: #1D1D1B;
+  }
+  
+  input[type=text] {
+    /* cite: how to style a form from https://learn.shayhowe.com/html-css/building-forms/ by Shay Howe*/
+    border-radius: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    background: #fff;
+    border: 0.12rem solid #c6c7cc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    outline-color: #4596CA;
+    overflow: hidden;
+    transition: .2s border-color;
+  }
+  
+  .form-input:hover, .form-input:focus, .form-drop-down:hover, .form-drop-down:focus {
+    border: 0.12rem solid #1D1D1B;
+  }
+  
+  label {
+    /* cite: how to style a form from https://learn.shayhowe.com/html-css/building-forms/ by Shay Howe*/
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #1D1D1B;
+    padding: 0.5rem;
+  }
+  
+  .form-radio-label {
+    display: inline-flex;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #1D1D1B;
+    padding: 0.5rem;
+  }
+  
+  
+  /* cite: how to style checkboxes from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+  
+  .form-check-container {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    cursor: pointer;
+    font-size: 1.3rem;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+  /* Hide the browser's default checkbox */
+  .form-check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #eee;
+    border-radius: 0.35em;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .form-check-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .form-check-container input:checked ~ .checkmark {
+    background-color: #5BAFE4;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .form-check-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .form-check-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .aside-filter {
+    margin-top: 1em;
+    margin-left: 3em;
+  }
+  
+  .aside-form {
+    margin-bottom: 2em;
+  }
+  
+  .form-drop-down {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 1rem;
+    background: #fff;
+    border: 0.13rem solid #c6c7cc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+    padding: 0.7rem;
+    margin-top: 1rem;
+    outline: none;
+    overflow: hidden;
+    transition: .2s border-color;
+  }
+  
+  ::placeholder {
+    /* cite: how to change style of placeholder text https://www.w3schools.com/howto/howto_css_placeholder.asp*/
+    color: #A7A7A7;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .img-link {
+    padding: 0.3rem;
+    max-width: 15%;
+    margin-top: 1rem;
+  }
+  
+  
+  .img-link:hover, .img-link:focus, .checkout-img-link:hover,.checkout-img-link:focus, .feature-img-link:hover, .feature-img-link:focus, .product-img-link:hover, .product-img-link:focus, #nav-cart:hover, #nav-cart:focus {
+    opacity: 0.5;
+  }
+  
+  
+  /* 
+    TEXT ELEMENTS -------------------
+  */
+  
+  h1 {
+    color: #1D1D1B;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5rem;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+    color: #1D1D1B;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    margin-top: 1rem;
+    color: #1D1D1B;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.2rem;
+  }
+  
+  h4, #site-sub-title {
+    margin-top: 2rem;
+    color: #A7A7A7;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  
+  .h4-no-margin {
+    margin:0;
+    color: #A7A7A7;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  
+  #site-sub-title {
+    margin-top:-1.5em;
+  }
+  
+  h5{
+    color: #1D1D1B;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .txt-nav {
+    text-decoration: none;
+    color: #1D1D1B;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  P {
+    color: #1D1D1B;
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  
+  .txt-headings-info {
+    /* for style guide only*/
+    color: #A7A7A7;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    border-top-width: 0.1rem;
+    border-top-style: solid;
+    border-top-color: #A7A7A7;
+    max-width: 30%;
+  }
+  
+  .ol-li {
+    color: #1D1D1B;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+  }
+  
+  .ul-li {
+    color: #1D1D1B;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+  }
+  
+  
+  
+  /* 
+    COMBINED ELEMENTS -------------------
+  */
+  
+  .product-list-title, .product-list-price {
+    display:block;
+    text-decoration: none;
+    color: #1D1D1B;
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+  .product-list-author {
+    display:block;
+    text-decoration: none;
+    color: #434342;
+    margin-bottom: 0.5rem;
+    padding: 0.05rem;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  
+  .product-list-review {
+    color: #434342;
+    margin: 0;
+    padding: 0.05rem;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  
+  .product-list-rating {
+    padding: 0.5rem 0 0.5rem 0;
+    max-width: 60%;
+  }
+  
+  .product-list-title:hover, .product-list-title:focus, .product-list-author:hover, .product-list-author:focus {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .checkout-img-link, .feature-img-link {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .product-img-link {
+    padding: 0.3rem;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .product-section {
+    padding-bottom: 2rem;
+    border-bottom-width: 0.15rem;
+    border-bottom-style: solid;
+    border-bottom-color: #A7A7A7;
+  }
+  
+  .feature-background {
+    margin-bottom: 3em;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    padding: 2em;
+    background-color: #F2F2F2;
+    border-radius: 2rem;
+  }
+  
+  .payment-form-background {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background-color: #F2F2F2;
+  }
+  
+  .aside-checkout {
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: #F2F2F2;
+    border-radius: 2rem;
+  }
+  
+  .footer-basic {
+    margin-top: 5em;
+    padding: 3em 0;
+    background-color:#F2F2F2;
+    color: #434342;
+  }
+  
+  .footer-basic ul {
+    padding-right: 3em;
+    list-style:none;
+    text-align:center;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 0.8em;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+  
+  
+  
+  .footer-back-top {
+    /* cite: how to make a sticky footer for back to top from https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
+    position: fixed;
+    right: 0;
+    bottom: 1em;
+    color: white;
+    text-align: center;
+  }
