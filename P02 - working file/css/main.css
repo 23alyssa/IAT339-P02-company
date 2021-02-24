@@ -121,6 +121,21 @@ div {
     margin-right: -50vw;
   }
 
+  .background-img {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 98vw;
+     padding: 0rem;
+     display: table;
+     height: 100%;
+    background-image:url("pattern.svg");
+    background-repeat:no-repeat;
+  }
+
   .notes {
     padding: 1rem;
     max-width: 100%;
@@ -656,7 +671,7 @@ div {
     color:#aaa;
     margin-bottom:0;
   }
-  
+
   .footer-back-top {
     /* cite: how to make a sticky footer for back to top from https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
     position: fixed;
@@ -664,19 +679,4 @@ div {
     bottom: 1em;
     color: white;
     text-align: center;
-  }
-
-  .background-img {
-    left: 50%;
-  	margin-left: -50vw;
-  	margin-right: -50vw;
-  	max-width: 100vw;
-  	position: relative;
-  	right: 50%;
-  	width: 98vw;
-     padding: 0rem;
-     display: table;
-     height: 100%;
-    background-image:url("pattern.svg");
-    background-repeat:no-repeat;
   }
