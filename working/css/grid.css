@@ -203,7 +203,7 @@ span.price {
 }
 
 /* 
-  Spacing Margins -------------------
+  Spacing -------------------
 */
 
 .margin-left{
@@ -216,6 +216,14 @@ span.price {
 
 .margin-bottom {
   margin-bottom: 7em;
+}
+
+.margin-top{
+  margin-top: 4em;
+}
+
+.padding-bottom {
+  height: 10em;
 }
 
 
@@ -276,6 +284,10 @@ span.price {
 
   .brand-item {
     content-visibility: hidden;
+  }
+
+  .h1 {
+    font-size: 3rem;
   }
 
 }
