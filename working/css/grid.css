@@ -32,10 +32,25 @@
     align-items: center;
     justify-content: center;
 
-    text-align: center;
+    margin: 3em;
+  }
+
+
+  .flex-container-right {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    align-items: right;
+    justify-content: right;
 
     margin: 3em;
   }
+
 
   .flex-container-feature, .flex-container-order-sum {
     margin-top: 3em;
@@ -186,6 +201,24 @@ span.price {
 .footer-list-inline-item {
   flex-grow: 1;
 }
+
+/* 
+  Spacing Margins -------------------
+*/
+
+.margin-left{
+  margin-left: 3em;
+}
+
+.margin-right{
+  margin-right: 3em;
+}
+
+.margin-bottom {
+  margin-bottom: 10em;
+}
+
+
 
 /* 
   MEDIA QUERY -------------------
