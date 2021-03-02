@@ -20,16 +20,54 @@
     flex-wrap: wrap;
   }
 
-  .flex-item-color {
-    flex-grow: 1;
-    flex-basis: 30em;
+  .flex-container-center {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 3em;
   }
+
+
+  .flex-container-right {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    align-items: right;
+    justify-content: right;
+
+    margin: 3em;
+  }
+
 
   .flex-container-feature, .flex-container-order-sum {
     margin-top: 3em;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+  }
+
+  .flex-container-nav {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flex-item-color {
+    flex-grow: 1;
+    flex-basis: 30em;
   }
 
   .flex-item-feature-img {
@@ -42,12 +80,6 @@
   .flex-item-feature-txt {
     flex-grow: 1;
     flex-basis: 70em;
-  }
-
-  .flex-container-nav {
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
   }
 
   .flex-item-nav, .flex-container-brand {
@@ -171,6 +203,32 @@ span.price {
 }
 
 /* 
+  Spacing -------------------
+*/
+
+.margin-left{
+  margin-left: 3em;
+}
+
+.margin-right{
+  margin-right: 3em;
+}
+
+.margin-bottom {
+  margin-bottom: 7em;
+}
+
+.margin-top{
+  margin-top: 4em;
+}
+
+.padding-bottom {
+  height: 10em;
+}
+
+
+
+/* 
   MEDIA QUERY -------------------
 */
 
@@ -214,6 +272,22 @@ span.price {
 
   .footer-list-inline-item {
     flex-basis: 2em;
+  }
+
+  .txt-right {
+    text-align: left;
+  }
+
+  .flex-container-center {
+    margin: 1em;
+  }
+
+  .brand-item {
+    content-visibility: hidden;
+  }
+
+  .h1 {
+    font-size: 3rem;
   }
 
 }
