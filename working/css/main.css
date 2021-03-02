@@ -107,6 +107,10 @@ div {
     padding: 2rem;
   }
 
+  .brand-item {
+    min-width: 20%;
+  }
+
   .brand-pattern {
     /* cite: full image bleed from https://css-tricks.com/full-bleed/ */
     opacity: 40%;

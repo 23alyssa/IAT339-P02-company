@@ -215,7 +215,7 @@ span.price {
 }
 
 .margin-bottom {
-  margin-bottom: 10em;
+  margin-bottom: 7em;
 }
 
 
@@ -264,6 +264,18 @@ span.price {
 
   .footer-list-inline-item {
     flex-basis: 2em;
+  }
+
+  .txt-right {
+    text-align: left;
+  }
+
+  .flex-container-center {
+    margin: 1em;
+  }
+
+  .brand-item {
+    content-visibility: hidden;
   }
 
 }
