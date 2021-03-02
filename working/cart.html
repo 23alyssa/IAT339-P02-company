@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--cite: how to change meta viewport from https://web.dev/responsive-web-design-basics/-->
+
+  <title>Cart</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+
+  <!-- FONT IMPORT BY LINK-->
+  <!--cite: how to change fonts used by google via link from https://www.w3schools.com/css/css_font_google.asp-->
+
+  <!-- Dosis Extra Light, Light, Regular, Medium, Semi-Bold, Bold-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Open Sans Light, Regular, Regular Italics, Semi Bold, Bold-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="top">
+
+    <!-- cite flexblox navbar right aligned from https://freshman.tech/flexbox-navbar/-->
+    <div class="flex-container-nav">
+
+        <div class="flex-item-xsm">
+          <img class="nav-logo" src="img/logo-header.svg" alt="The Book Work Logo">
+        </div>
+
+        <nav class="flex-item-nav">
+          <a class="txt-nav" href="">Books</a>
+          <a class="txt-nav" href="">Events</a>
+          <a class="txt-nav" href="about.html">About</a>
+          <a class="txt-nav" href="contact.html">Contact</a>
+          <a class="txt-nav" href="checkout-template.html"><img id="nav-cart" src="img/Icons/nav-cart.svg" alt="cart icon"></a>
+        </nav>
+
+      </div>
+
+  </header>
+
+
+        <div class="margin-top flex-container-payment rows">
+            <div class="flex-item-payment-65">
+              <div class="payment-form-background">
+                  <h2>Your Cart:</h2>
+                  <!--Checkout Item One-->
+                    <div class="flex-container margin-top">
+                        <div class="flex-item-cart">
+                        <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+                        target="_blank">
+                            <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+                        </a>
+                        </div>
+                
+                        <div class="flex-item-lg">
+                            <div>
+                                <a class="product-list-title" href="#">The Day You Begin</a>
+                                <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+                            </div>
+
+                            <div class="sum-price">
+                                <h5 class="product-list-price">$25.99</h5>
+                            </div>
+                    
+                            <div>
+                                <label for="b1-quantity">Quantity:</label>
+                                <select class="form-drop-down" name="quantity" id="b1-quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="4">5</option>
+                                </select>
+                                <a class="btn-submit" href="#">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Checkout Item One-->
+                    <div class="flex-container margin-top">
+                        <div class="flex-item-cart">
+                        <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+                        target="_blank">
+                            <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+                        </a>
+                        </div>
+
+                        <div class="flex-item-lg">
+                            <div>
+                                <a class="product-list-title" href="#">The Day You Begin</a>
+                                <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+                            </div>
+
+                            <div class="sum-price">
+                                <h5 class="product-list-price">$25.99</h5>
+                            </div>
+
+                            <div>
+                                <label for="b1-quantity">Quantity:</label>
+                                <select class="form-drop-down" name="quantity" id="b1-quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="4">5</option>
+                                </select>
+                                <a class="btn-submit" href="#">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+
+              </div>
+            </div>
+
+            <div class="flex-item-payment-25">
+                <div class="payment-form-background">
+                    <h2>Order Summary:</h2>
+                    <h5>Items (3): <span class="price">$50.62</span></h5>
+                    <h5>Taxes: <span class="price">$5.63</span></h5>
+                    <h5>Delivery: <span class="price">FREE</span></h5>
+                    <h5 class="element-bottom">Total: <span class="price">FREE</span></h5>
+                    <a href="#" class="btn-basic">Confirm Order</a>
+                </div>
+            </div>
+
+
+
+
+
+  </div>
+  
+
+  <!--Footer-->
+  <div class="footer-basic">
+    <footer>
+        <ul class="footer-list-inline">
+            <li class="footer-list-inline-item"><a href="">Books</a></li>
+            <li class="footer-list-inline-item"><a href="">Events</a></li>
+            <li class="footer-list-inline-item"><a href="">About</a></li>
+            <li class="footer-list-inline-item"><a href="">Contact</a></li>
+
+            <li class="footer-list-inline-item"><a href="index.html">Style Guide</a></li>
+            <li class="footer-list-inline-item"><a href="product-list-template.html">Product Template</a></li>
+            <li class="footer-list-inline-item"><a href="checkout-template.html">Checkout Template</a></li>
+        </ul>
+        <p class="copyright">The Book Worm © 2021</p>
+    </footer>
+  </div>
+
+
+</body>
+
+</html>
