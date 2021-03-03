@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--cite: how to change meta viewport from https://web.dev/responsive-web-design-basics/-->
+
+  <title>Place Order</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+
+  <!-- FONT IMPORT BY LINK-->
+  <!--cite: how to change fonts used by google via link from https://www.w3schools.com/css/css_font_google.asp-->
+
+  <!-- Dosis Extra Light, Light, Regular, Medium, Semi-Bold, Bold-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Open Sans Light, Regular, Regular Italics, Semi Bold, Bold-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- cite flexblox navbar right aligned from https://freshman.tech/flexbox-navbar/-->
+  <header class="flex-container-nav">
+
+    <div class="flex-item-xsm">
+      <img class="nav-logo" src="img/logo-header.svg" alt="The Book Work Logo">
+    </div>
+
+    <nav class="flex-item-nav">
+      <a class="txt-nav" href="product-list-template.html">Books</a>
+      <a class="txt-nav" href="">Events</a>
+      <a class="txt-nav" href="about.html">About</a>
+      <a class="txt-nav" href="contact.html">Contact</a>
+      <a class="txt-nav" href=""><img id="nav-cart" src="img/Icons/nav-cart.svg" alt="cart icon"></a>
+    </nav>
+
+  </header>
+
+  <div class="flex-container">
+
+    <!-- Order Summary -->
+    <section class="flex-container-order-sum">
+      <div class="payment-form-background">
+        <h3>Order Summary</h3>
+        <div class="flex-container-order-sum">
+
+        <!--Checkout Item One-->
+        <div class="flex-container">
+          <div class="flex-item-cart">
+            <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+            target="_blank">
+              <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+            </a>
+          </div>
+    
+          <div class="flex-item-lg">
+            <a class="product-list-title" href="#">The Day You Begin</a>
+            <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+    
+            <h5 class="product-list-price">$25.99</h5>
+    
+            <label class="form-label" for="b1-quantity">Quantity:</label>
+            <select class="form-drop-down" name="quantity" id="b1-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="4">5</option>
+            </select>
+            <a class="btn-submit" href="#">Delete</a>
+          </div>
+        </div>
+    
+        <!--Checkout Item One-->
+        <div class="flex-container">
+          <div class="flex-item-cart">
+            <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+            target="_blank">
+              <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+            </a>
+          </div>
+    
+          <div class="flex-item-lg">
+            <a class="product-list-title" href="#">The Day You Begin</a>
+            <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+    
+            <h5 class="product-list-price">$25.99</h5>
+    
+            <label class="form-label" for="b2-quantity">Quantity:</label>
+            <select class="form-drop-down" name="quantity" id="b2-quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="4">5</option>
+            </select>
+            <a class="btn-submit" href="#">Delete</a>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="product-section"></div>
+        <h4 class="h4-no-margin">Sub-total: $55.90</h4>
+      </div>
+    </div>
+    </section>
+  </div>
+
+
+
+  <div class="flex-container-payment">
+    <div class="flex-item-payment-75">
+      <div class="payment-form-background">
+        <form action="/action.php">
+        
+          <div class="flex-container-payment">
+            <div class="flex-item-payment-50">
+              <h3>Billing Address</h3>
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr">Address</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="New York">
+  
+              <div class="flex-container-payment">
+                <div class="flex-item-payment-50 ">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="flex-item-payment-50 ">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
+                </div>
+              </div>
+            </div>
+  
+            <div class="flex-item-payment-50 ">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="flex-container">
+                <div>
+                  <input class="form-radio-btn" type="radio" id="visa" name="payment type" value="visa">
+                  <label class="form-radio-label" for="visa">Visa</label><br>
+                </div>
+
+                <div>
+                  <input class="form-radio-btn" type="radio" id="mastercard" name="payment type" value="mastercard">
+                  <label class="form-radio-label" for="mastercard">MasterCard</label><br>
+                </div>
+
+                <div>
+                  <input class="form-radio-btn" type="radio" id="other" name="payment type" value="other">
+                  <label class="form-radio-label" for="other">Other</label><br><br>
+                </div>
+                
+                
+                
+              </div>
+
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              <div class="flex-container-payment">
+                <div class="flex-item-payment-50 ">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="flex-item-payment-50 ">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <label class="form-check-container">Shipping Address same as Billing
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <input class="btn-submit" type="submit" value="Continue to checkout">
+        </form>
+      </div>
+    </div>
+
+    <div class="flex-item-payment-25">
+      <div class="payment-form-background">
+        <h3 class="element-bottom">Total</h3>
+        <h5>Sub-Total: <span class="price">$50.62</span></h5>
+        <h5>Taxes: <span class="price">$5.63</span></h5>
+        <h5>Delivery: <span class="price">FREE</span></h5>
+        <a href="#" class="btn-basic">Confirm Order</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-basic">
+    <footer>
+        <ul class="footer-list-inline">
+            <li class="footer-list-inline-item"><a href="">Books</a></li>
+            <li class="footer-list-inline-item"><a href="">Events</a></li>
+            <li class="footer-list-inline-item"><a href="">About</a></li>
+            <li class="footer-list-inline-item"><a href="">Contact</a></li>
+
+            <li class="footer-list-inline-item"><a href="index.html">Style Guide</a></li>
+            <li class="footer-list-inline-item"><a href="product-list-template.html">Product Template</a></li>
+            <li class="footer-list-inline-item"><a href="checkout-template.html">Checkout Template</a></li>
+        </ul>
+        <p class="copyright">The Book Worm © 2021</p>
+    </footer>
+  </div>  
+
+
+</body>
