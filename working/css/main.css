@@ -552,7 +552,9 @@ div {
     padding: 0.3rem;
   }
 
-
+ .event-img{
+   size: 40%;
+ }
 
   /*
     COMBINED ELEMENTS -------------------
