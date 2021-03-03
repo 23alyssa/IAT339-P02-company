@@ -237,12 +237,21 @@ span.price {
   margin-bottom: 7em;
 }
 
+.margin-tb-sm {
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+
 .margin-top{
   margin-top: 4em;
 }
 
 .padding-bottom {
   height: 10em;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 
@@ -351,9 +360,6 @@ span.price {
     flex-basis: 15em;
   }
 
-  .flex-container-payment{
-    
-  }
   .flex-item-payment-25 {
     margin-bottom: 1.2em;
   }

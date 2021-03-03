@@ -593,8 +593,13 @@ div {
   }
 
   .product-list-rating {
-    padding: 0.5rem 0 0.5rem 0;
+    margin-top: -1em;
     max-width: 60%;
+  }
+
+  #book-rating {
+    padding: 0.2rem 0 0.2rem 0;
+    max-width: 47%;
   }
 
   .product-list-title:hover, .product-list-title:focus, .product-list-author:hover, .product-list-author:focus {
@@ -628,6 +633,14 @@ div {
     padding: 2em;
     background-color: #F2F2F2;
     border-radius: 2rem;
+  }
+
+  .center-content {
+    margin-bottom: 3em;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    padding: 2em;
   }
 
   .payment-form-background {
