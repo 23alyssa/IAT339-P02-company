@@ -90,6 +90,13 @@
     flex-basis: 70em;
   }
 
+  .flex-item-product-single {
+    flex-grow: 1;
+    flex-basis: 40em;
+    padding-top: 1em;
+    margin-right: 3em;
+  }
+
   .flex-item-nav, .flex-container-brand {
     display: -webkit-flex;
     display: -ms-flex;
