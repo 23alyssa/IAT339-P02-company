@@ -506,6 +506,7 @@ div {
   P {
     color: #1D1D1B;
     margin-top: 0;
+    margin-bottom:1.5rem;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -554,6 +555,14 @@ div {
 
  .event-img{
    size: 40%;
+ }
+
+ .home-img{
+   margin-left:3rem;
+ }
+
+ .margin-bottom{
+   margin-bottom: 0rem;
  }
 
   /*
