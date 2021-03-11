@@ -216,11 +216,7 @@ div {
   }
 
   .nav-logo {
-    max-width: 80%;
-  }
-
-  #nav-margin {
-    margin-top: 5em;
+    max-width: 100%;
   }
 
   #nav-cart {
@@ -230,6 +226,72 @@ div {
   .txt-nav:hover, .txt-nav:focus {
     color: #FD5F60;
   }
+
+  .topnav {
+    overflow: hidden;
+  }
+  
+  .topnav-home {
+    display:inline-flex;
+    padding: 0.6rem;
+    text-decoration: none;
+  }
+
+  .topnav-body {
+    float: right;
+    display: block;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #1D1D1B;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+  }
+
+  .topnav-cart {
+    float: right;
+    display: block;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #1D1D1B;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+  }
+
+  .topnav-menu {
+    float: right;
+    display: block;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    color: #434342;
+    text-align: center;
+    padding: 0.6rem;
+    text-decoration: none;
+
+  }
+  
+  .topnav a:hover {
+    color: #FD5F60;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
 
   .btn-submit, .btn-reset {
     text-shadow:none;
