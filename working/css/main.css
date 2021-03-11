@@ -230,7 +230,7 @@ div {
   .topnav {
     overflow: hidden;
   }
-  
+
   .topnav-home {
     display:inline-flex;
     padding: 0.6rem;
@@ -283,11 +283,11 @@ div {
     text-decoration: none;
 
   }
-  
+
   .topnav a:hover {
     color: #FD5F60;
   }
-  
+
   .topnav .icon {
     display: none;
   }
@@ -553,6 +553,16 @@ div {
     font-size: 1.1rem;
   }
 
+
+    h6{
+      margin-top:-1rem;
+      color: #1D1D1B;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.1rem;
+    }
+
   .txt-nav {
     text-decoration: none;
     color: #1D1D1B;
@@ -616,7 +626,7 @@ div {
   }
 
  .event-img{
-   size: 40%;
+   width:50%
  }
 
  .home-img{
