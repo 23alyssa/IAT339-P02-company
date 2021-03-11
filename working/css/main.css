@@ -634,7 +634,7 @@ div {
   }
 
  .event-img{
-   width:50%
+   max-width: 50%
  }
 
  .home-img{
@@ -726,6 +726,15 @@ div {
   }
 
   .feature-background-review {
+    margin-bottom: 3em;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: #F2F2F2;
+    border-radius: 2rem;
+  }
+
+  .feature-background-event {
     margin-bottom: 3em;
     align-items: center;
     justify-content: center;
