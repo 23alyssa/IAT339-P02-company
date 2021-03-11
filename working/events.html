@@ -11,6 +11,8 @@
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <script type="text/javascript" src="javascript/javascript.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- FONT IMPORT BY LINK-->
   <!--cite: how to change fonts used by google via link from https://www.w3schools.com/css/css_font_google.asp-->
@@ -33,27 +35,25 @@
 
   <header id="top">
 
-    <!-- cite flexblox navbar right aligned from https://freshman.tech/flexbox-navbar/-->
-    <div class="flex-container-nav">
 
-        <div class="flex-item-xsm">
-          <a href="home.html">
-            <img class="nav-logo" src="img/logo-header.svg" alt="The Book Work Logo">
-          </a>
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="topnav-home"><img class="nav-logo"src="img/logo-header.svg" alt="The Book Work Logo"></a>
+        <a href="cart.html" class="topnav-cart"><img id="nav-cart" src="img/Icons/nav-cart.svg" alt="cart icon"></a>
+
+        <div class="topnav-body">
+            <a href="contact.html" class="topnav-body">Contact</a>
+            <a href="about.html" class="topnav-body">About</a>
+            <a href="events.html" class="topnav-body">Events</a>
+            <a href="product-list-template.html" class="topnav-body">Books</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars topnav-menu"></i>
+            </a>
         </div>
 
-        <nav class="flex-item-nav">
-          <a class="txt-nav" href="home.html">Home</a>
-          <a class="txt-nav" href="product-list-template.html">Books</a>
-          <a class="txt-nav" href="events.html">Events</a>
-          <a class="txt-nav" href="about.html">About</a>
-          <a class="txt-nav" href="contact.html">Contact</a>
-          <a class="txt-nav" href="cart.html"><img id="nav-cart" src="img/Icons/nav-cart.svg" alt="cart icon"></a>
-        </nav>
+    </div>
 
-      </div>
-
-  </header>
+</header>
 
   <section class="margin-top background-img">
       <h1 class="txt-center">Events Calendar</h1>
