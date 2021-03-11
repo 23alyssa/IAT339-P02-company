@@ -586,6 +586,10 @@ div {
     line-height: 1.6rem;
   }
 
+  .txt-review {
+    font-size: 1.1rem;
+  }
+
   .txt-center {
     text-align: center;
   }
@@ -716,6 +720,15 @@ div {
     align-items: center;
     justify-content: center;
     max-width: 80%;
+    padding: 2em;
+    background-color: #F2F2F2;
+    border-radius: 2rem;
+  }
+
+  .feature-background-review {
+    margin-bottom: 3em;
+    align-items: center;
+    justify-content: center;
     padding: 2em;
     background-color: #F2F2F2;
     border-radius: 2rem;
