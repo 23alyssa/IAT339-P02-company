@@ -175,7 +175,6 @@
 
   /* cite: how to make a product layout from https://css-tricks.com/designing-a-product-page-layout-with-flexbox/ */
   .flex-container-products {
-    align-items: center;
     justify-content: center;
     flex-direction: row;
   }
