@@ -108,7 +108,7 @@ div {
   }
 
   .brand-item {
-    min-width: 20%;
+    max-width: 100%;
   }
 
   .brand-pattern {
@@ -587,6 +587,10 @@ div {
   }
 
   .txt-center {
+    text-align: center;
+  }
+
+  .txt-center-p {
     text-align: center;
   }
 
