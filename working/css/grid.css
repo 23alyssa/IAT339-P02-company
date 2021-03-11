@@ -156,8 +156,8 @@
 
   .flex-item-product {
     flex-grow: 1;
-    flex-basis: 3em;
-    margin: 1.5em;
+    flex-basis: 5em;
+    margin: 1em;
   }
 
   .flex-item-cart {
@@ -350,12 +350,22 @@ span.price {
       margin: 0.2em auto;
   }
 
+  .flex-item-product {
+    flex-grow: 1;
+    flex-basis: 8em;
+  }
+
 }
 
 @media screen and (max-width: 55.125em) {
 
   .flex-container-feature, .flex-container-order-sum {
     flex-direction: column;
+  }
+
+  .flex-item-product {
+    flex-grow: 1;
+    flex-basis: 11em;
   }
 
 }
@@ -374,7 +384,7 @@ span.price {
   .txt-center {
     font-size: 2.5rem;
   }
-  
+
 }
 
 @media screen and (max-width: 75.625em) {
@@ -383,11 +393,6 @@ span.price {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
-
-  .flex-item-product {
-    flex-grow: 1;
-    flex-basis: 10em;
   }
 
   .flex-item-payment-25 {
