@@ -380,6 +380,10 @@ span.price {
     flex-basis: 8em;
   }
 
+  .about-img{
+    max-width: 80%
+  }
+
 }
 
 @media screen and (max-width: 55.125em) {

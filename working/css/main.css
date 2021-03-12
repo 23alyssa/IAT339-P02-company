@@ -637,6 +637,10 @@ div {
    max-width: 50%
  }
 
+ .about-img{
+  max-width: 50%
+}
+
  .home-img{
    margin-left:3rem;
  }
