@@ -478,7 +478,6 @@ div {
     /* cite: how to change style of placeholder text https://www.w3schools.com/howto/howto_css_placeholder.asp*/
     color: #A7A7A7;
     font-family: 'Open Sans', sans-serif;
-    align-self: top;
   }
 
   .img-link {
