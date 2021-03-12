@@ -689,7 +689,7 @@ div {
     max-width: 60%;
   }
 
-  #book-rating {
+  .book-rating {
     margin-top: -1em;
     padding: 0.2rem 0 0.2rem 0;
     max-width: 47%;
