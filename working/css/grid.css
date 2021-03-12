@@ -366,6 +366,10 @@ span.price {
     margin: 1em;
   }
 
+  #similar-books {
+    margin: 0;
+  }
+
   .sum-price, .float-right {
     float: none;
   }
@@ -382,6 +386,10 @@ span.price {
 
   .about-img{
     max-width: 80%
+  }
+
+  body {
+    padding: 0.5rem;
   }
 
 }
