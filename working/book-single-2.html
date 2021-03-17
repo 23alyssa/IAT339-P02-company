@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--cite: how to change meta viewport from https://web.dev/responsive-web-design-basics/-->
+
+  <title>The Day You Begin</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <script type="text/javascript" src="javascript/javascript.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- FONT IMPORT BY LINK-->
+  <!--cite: how to change fonts used by google via link from https://www.w3schools.com/css/css_font_google.asp-->
+
+  <!-- Dosis Extra Light, Light, Regular, Medium, Semi-Bold, Bold-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Open Sans Light, Regular, Regular Italics, Semi Bold, Bold-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="top">
+
+
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="topnav-home"><img class="nav-logo" src="img/logo-header.svg" alt="The Book Work Logo"></a>
+        <a href="cart.html" class="topnav-cart"><img id="nav-cart" src="img/Icons/nav-cart.svg" alt="cart icon"></a>
+
+        <div class="topnav-body">
+            <a href="contact.html" class="topnav-body">Contact</a>
+            <a href="about.html" class="topnav-body">About</a>
+            <a href="events.html" class="topnav-body">Events</a>
+            <a href="product-list-template.html" class="topnav-body">Books</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars topnav-menu"></i>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+
+  <!--Book Header Summary-->
+  <section class="flex-container-product-single">
+    <div class="flex-container-feature-product-single center-content-product-single ">
+        <div class="flex-item-product-single">
+          <a href="#" target="_blank">
+            <img class="feature-img-link" src="img/books/adventure/lightning-thief.jpg" alt="Percy Jackson and the Olympians: The Lightning Thief">
+          </a>
+        </div>
+
+        <div class="flex-item-product-single">
+          <h2 class="no-margin">Percy Jackson and the Olympians: The Lightning Thief</h2>
+          <h3 class="no-margin">By Rick Riordian</h3>
+
+          <div class="flex-container margin-tb-sm">
+              <p>June 28, 2005 |</p>
+              <img class="book-rating product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+          </div>
+
+          <div>
+             <p>Format Options</p>
+             <a class="btn-reset" href="#">Hard Cover</a>
+             <a class="btn-reset" href="#">Paperback</a>
+          </div>
+
+          <div>
+            <h2 class="margin-tb-sm">$25.99</h2>
+            <a class="margin-tb-sm btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
+                alt="shopping cart icon"></a>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+  <!--About the book-->
+  <section class="flex-container-center">
+        <div class="flex-container-product-single-txt">
+            <h2>About the Book</h2>
+            <div class="flex-container">
+              <p class="flex-item-feature-txt element">The Lightning Thief is a 2005 American-fantasy-adventure novel based on Greek mythology, the first young adult novel written by Rick Riordan in the Percy Jackson & the Olympians series. It won the Adult Library Services Association Best Books for Young Adults, among other awards.  </p>
+            </div>
+        </div>
+    </section>
+
+   <!--About the Author-->
+    <section class="flex-container-center">
+        <div class="flex-container-product-single-txt">
+            <h2>About the Author</h2>
+            <div class="flex-container">
+              <p class="flex-item-feature-txt element">Rick Riordan is the #1 New York Times bestselling author of the Percy Jackson and the Olympians series, the Kane Chronicles, and the Heroes of Olympus. He is also the author of the multi-award-winning Tres Navarre mystery series for adults.
+
+For fifteen years, Rick taught English and history at public and private middle schools in the San Francisco Bay Area and in Texas. In 2002, Saint Mary's Hall honored him with the school's first Master Teacher Award.
+
+While teaching full time, Riordan began writing mystery novels for grownups. His Tres Navarre series went on to win the top three national awards in the mystery genre - the Edgar, the Anthony and the Shamus. Riordan turned to children's fiction when he started The Lightning Thief as a bedtime story for his oldest son.
+
+Today over 35 million copies of his Percy Jackson, Kane Chronicles, and Heroes of Olympus books are in print in the United States, and rights have been sold into more than 35 countries. Rick is also the author of The 39 Clues: The Maze of Bones, another #1 New York Times bestseller.
+
+Rick Riordan now writes full-time. He lives in Boston with his wife and two sons.<br><br>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Similar Books-->
+    <section class="flex-container-center">
+        <div class="flex-container-center">
+            <h2 class="product-section">Similar Books</h2>
+
+        <div class="flex-container-products">
+
+          <!-- book 1 -->
+          <div class="flex-item-product">
+            <a href="book-single.html">
+            <img class="product-img-link" src="img/books/adventure/land-of-stories.jpg"
+              alt="the Land of Stories">
+            </a>
+
+            <a class="product-list-title" href="book-single.html">The Land of Stories</a>
+            <a class="product-list-author" href="#">By Chris Colfer</a>
+
+
+            <div>
+              <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+            </div>
+
+            <h5 class="product-list-price">$25.99</h5>
+            <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
+                alt="shopping cart icon"></a>
+          </div>
+
+          <!-- book 2 -->
+          <div class="flex-item-product">
+            <a href="book-single.html">
+            <img class="product-img-link" src="img/books/adventure/charlie-chocolate-factory.jpg"
+              alt="charlie and the chocolate factory">
+            </a>
+
+            <a class="product-list-title" href="book-single.html">Charlie and the Chocolate Factory</a>
+            <a class="product-list-author" href="#">By Rol Dahl</a>
+
+
+            <div>
+              <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+            </div>
+
+            <h5 class="product-list-price">$25.99</h5>
+            <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
+                alt="shopping cart icon"></a>
+          </div>
+
+
+          <!-- book 3 -->
+          <div class="flex-item-product">
+            <a href="book-single.html">
+            <img class="product-img-link" src="img/books/adventure/journey-edward-tulane.jpg"
+              alt="the miraculous journey of edward tulane">
+            </a>
+
+            <a class="product-list-title" href="book-single.html">The Miraculous Journey of Edward Tulane</a>
+            <a class="product-list-author" href="#">By Kate Dicamilo</a>
+
+
+            <div>
+              <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+            </div>
+
+            <h5 class="product-list-price">$25.99</h5>
+            <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
+                alt="shopping cart icon"></a>
+          </div>
+
+
+          <!-- book 4 -->
+          <div class="flex-item-product">
+            <a href="book-single.html">
+            <img class="product-img-link" src="img/books/adventure/lightning-thief.jpg"
+              alt="The lightning thief">
+            </a>
+
+            <a class="product-list-title" href="book-single.html">The Lightning Thief</a>
+            <a class="product-list-author" href="#">By Rick Riordian</a>
+
+
+            <div>
+              <img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+            </div>
+
+            <h5 class="product-list-price">$25.99</h5>
+            <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
+                alt="shopping cart icon"></a>
+          </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!--Leave a review-->
+    <section class="flex-container-center">
+        <div class="flex-container-product-single">
+            <h2 >Leave a Review</h2>
+
+            <div class="element">
+              <a class="btn-submit float-right" href="#">Write a Review</a>
+
+              <!--review 1-->
+              <div class="feature-background-review margin-top">
+                <p class="txt-review float-right">Mar 2, 2021</p>
+
+                <div class="flex-container margin-tb-sm">
+                    <img class="book-rating product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+                    <p class="txt-review margin-left-sm">User_name_here</p>
+                </div>
+
+
+                <div>
+                    <h3>This book is amazing!</h3>
+                    <p class="txt-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus imperdiet vitae vitae in morbi orci, interdum vitae. A facilisis neque nec, nunc faucibus diam ac porttitor. Integer congue cursus adipiscing venenatis, rhoncus curabitur pellentesque dolor. Eget natoque nam ultrices sed sed lorem volutpat. Amet elit, a tellus, amet. Lorem gravida ac donec suspendisse bibendum.</p>
+                </div>
+
+                <div class="flex-container margin-tb-sm">
+                    <img class="product-list-rating" src="img/Icons/checkmark.svg" alt="checkmark">
+                    <h5 class="margin-left-sm">Yes, I recommend this book</h5>
+                </div>
+              </div>
+
+            <!--review 2-->
+            <div class="feature-background-review">
+              <p class="txt-review float-right">Mar 2, 2021</p>
+
+              <div class="flex-container margin-tb-sm">
+                  <img class="book-rating product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+                  <p class="txt-review margin-left-sm">User_name_here</p>
+              </div>
+
+
+              <div>
+                  <h3>My child didn't understand the story</h3>
+                  <p class="txt-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus imperdiet vitae vitae in morbi orci, interdum vitae. A facilisis neque nec, nunc faucibus diam ac porttitor. Integer congue cursus adipiscing venenatis, rhoncus curabitur pellentesque dolor. Eget natoque nam ultrices sed sed lorem volutpat. Amet elit, a tellus, amet. Lorem gravida ac donec suspendisse bibendum.</p>
+              </div>
+
+              <div class="flex-container margin-tb-sm">
+                  <img class="product-list-rating" src="img/Icons/x-mark.svg" alt="checkmark">
+                  <h5 class="margin-left-sm">No, I dont recommend this book</h5>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+    </section>
+
+    <!--Details and Specs-->
+    <section class="flex-container-center justify-left">
+      <div class="flex-container-product-single flex-container-product-single-txt">
+          <h2>Details & Specs</h2>
+          <div class="flex-item-feature-txt element">
+            <ul>
+              <li class="ul-li" >Title: Percy Jackson and the Olympians: The Lightning Thief</li>
+              <li class="ul-li">Format: Hardcover</li>
+              <li class="ul-li">ISBN - 13:	9780399246531</li>
+              <li class="ul-li">Product dimensions:32 pages, 10.81 X 9.5 X 0.42 in</li>
+              <li class="ul-li">Published: August 28, 2018</li>
+              <li class="ul-li">Publisher:Penguin Young Readers Group</li>
+              <li class="ul-li">Language: English</li>
+              <li class="ul-li">Appropriate for ages: All ages</li>
+            </ul>
+          </div>
+
+      </div>
+  </section>
+
+
+  <!--Footer-->
+  <div class="footer-basic">
+    <footer>
+        <ul class="footer-list-inline">
+          <li class="footer-list-inline-item"><a href="home.html">Home</a></li>
+          <li class="footer-list-inline-item"><a href="product-list-template.html">Books</a></li>
+          <li class="footer-list-inline-item"><a href="events.html">Events</a></li>
+          <li class="footer-list-inline-item"><a href="about.html">About</a></li>
+          <li class="footer-list-inline-item"><a href="contact.html">Contact</a></li>
+
+            <li class="footer-list-inline-item"><a href="index.html">Style Guide</a></li>
+            <li class="footer-list-inline-item"><a href="product-list-template.html">Product Template</a></li>
+            <li class="footer-list-inline-item"><a href="checkout-template.html">Checkout Template</a></li>
+        </ul>
+        <p class="copyright">The Book Worm © 2021</p>
+    </footer>
+  </div>
+
+
+</body>
+
+</html>
