@@ -8,3 +8,9 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+//reset contact form
+  function resetClear() {
+    document.getElementById("contactForm").reset();
+    document.getElementById("paymentForm").reset();
+  }

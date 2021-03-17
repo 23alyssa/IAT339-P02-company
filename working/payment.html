@@ -130,7 +130,7 @@
   <div class="flex-container-payment">
     <div class="flex-item-payment-75">
       <div class="payment-form-background">
-        <form action="/action.php">
+        <form id="paymentForm" action="/action.php">
 
           <div class="flex-container-payment">
             <div class="flex-item-payment-50">
@@ -202,6 +202,7 @@
             <input type="checkbox" checked="checked">
             <span class="checkmark"></span>
           </label>
+          <button class="btn-reset" type="reset" onclick="resetClear()" value="Reset">Reset</button>
         </form>
       </div>
     </div>
