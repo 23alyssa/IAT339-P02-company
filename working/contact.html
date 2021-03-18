@@ -60,7 +60,7 @@
             <h1 class="txt-center">Send us a message...</h1>
             <p class="txt-center-p">Have a book you want requested? Trouble signing up for an event? Idea you think we would like? Let us know! Please fill out the form below and we will get back to you shortly.</p>
 
-            <form id="contactForm">
+            <form method="post" action="#" id="contactForm">
                <div class="flex-container-payment">
                   <div class="flex-item-payment-50">
                     <label for="name">Name:</label>
@@ -72,15 +72,15 @@
                   </div>
                </div>
                   <div class="flex-item-lg" id="contact-message">
-                      <form method="post" action="#">
+                      <div>
                         <label for="message">Message:</label>
                         <textarea class="padding-bottom" id="message" name="message" placeholder="Message"></textarea>
-                      </form>
+                      </div>
                   </div>
                   <button class="btn-submit" type="submit" value="Submit">Submit</button>
                   <button class="btn-reset" type="reset" onclick="resetClear()" value="Reset">Reset</button>
-                </form>
-        </div>
+            </form>
+         </div>
 
     </section>
   </div>
