@@ -415,7 +415,7 @@ div {
   }
 
   /* On mouse-over, add a grey background color */
-  .form-check-container:hover input ~ .checkmark {
+  .form-check-container:hover input ~ .checkmark, .form-check-container:focus input ~ .checkmark {
     background-color: #ccc;
   }
 
@@ -447,6 +447,11 @@ div {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+
+  input:focus + .checkmark {
+    background-color: #ccc;
+    border: 0.15rem #434342 solid;
   }
 
   .aside-filter {
