@@ -342,7 +342,7 @@ div {
 
   input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
     color: #1D1D1B;
-    border: #5BAFE4 solid;
+    border: 0.12rem #5BAFE4 solid;
   }
 
   .form-input:hover, .form-input:focus, .form-drop-down:hover, .form-drop-down:focus {
