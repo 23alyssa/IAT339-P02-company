@@ -739,6 +739,18 @@ div {
     border-radius: 2rem;
   }
 
+  .feature-background-white {
+    margin-bottom: 3em;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    padding: 2em;
+    background: #FFFFFF;
+    opacity: 0.9;
+    box-shadow: 9px 8px 25px 4px rgba(0, 0, 0, 0.03); 
+    border-radius: 2rem;
+  }
+
   .feature-background-review {
     margin-bottom: 3em;
     align-items: center;

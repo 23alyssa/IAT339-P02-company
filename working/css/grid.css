@@ -523,7 +523,7 @@ span.price {
     border-radius: 2rem;
   }
 
-  .feature-background {
+  .feature-background, .feature-background-white {
     max-width: 90%;
   }
 
