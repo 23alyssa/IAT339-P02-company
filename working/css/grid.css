@@ -292,6 +292,10 @@ span.price {
   margin-bottom: 7em;
 }
 
+.margin-bottom-sm {
+  margin-bottom: 2em;
+}
+
 .margin-tb-sm {
   margin-top: 0.5em;
   margin-bottom: 0.2em;
