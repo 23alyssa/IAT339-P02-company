@@ -11,7 +11,7 @@
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
-
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
   <!-- FONT IMPORT BY LINK-->
   <!--cite: how to change fonts used by google via link from https://www.w3schools.com/css/css_font_google.asp-->
 
@@ -402,7 +402,7 @@
       <h5>Rendered element:</h5>
       <a class="btn-add-cart" href="#">
         Add to Cart
-        <img class="icon" src="img/Icons/cart.svg" alt="shopping cart icon">
+        <img class="icon" src="img/Icons/add-cart.svg" alt="shopping cart icon">
       </a>
 
       <h5>CSS selector:</h5>
@@ -412,7 +412,7 @@
       <code>
         &lt;a class="btn-add-cart" href="#">
           Add to Cart
-          &lt;img class="icon" src="img/Icons/cart.svg" alt="shopping cart icon">
+          &lt;img class="icon" src="img/Icons/add-cart.svg" alt="shopping cart icon">
         &lt;/a>
       </code>
     </section>
@@ -806,21 +806,20 @@
 
         <h5>Rendered element:</h5>
 
-        <div class="flex-container-nav">
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="topnav-home"><img class="nav-logo" src="img/logo-header.svg" alt="The Book Work Logo"></a>
+          <a href="cart.html" class="topnav-cart"><img id="nav-cart" src="img/Icons/nav-cart.svg" alt="cart icon"></a>
 
-          <div class="flex-item-xsm">
-            <img class="nav-logo" src="img/logo-header.svg" alt="The Book Work Logo">
+          <div class="topnav-body">
+              <a href="contact.html" class="topnav-body">Contact</a>
+              <a href="about.html" class="topnav-body">About</a>
+              <a href="events.html" class="topnav-body">Events</a>
+              <a href="book-listing.html" class="topnav-body">Books</a>
+
           </div>
 
-          <nav class="flex-item-nav">
-            <a class="txt-nav" href="">Books</a>
-            <a class="txt-nav" href="">Events</a>
-            <a class="txt-nav" href="">About</a>
-            <a class="txt-nav" href="">Contact</a>
-            <a class="txt-nav" href=""><img id="nav-cart" src="img/Icons/nav-cart.svg" alt="cart icon"></a>
-          </nav>
-
         </div>
+
 
         <h5>CSS selector:</h5>
         <p>.txt-nav</p>
@@ -944,7 +943,7 @@
             </div>
 
             <h5 class="product-list-price">$25.99</h5>
-            <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+            <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/add-cart.svg"
                 alt="shopping cart icon"></a>
             </section>
           </div>
@@ -978,7 +977,7 @@
                   &lt;/div><br>
 
                   &lt;h5 class="product-list-price">$25.99&lt;/h5><br>
-                  &lt;a class="btn-add-cart" href="#">Add to Cart&lt;img class="icon" src="img/Icons/cart.svg"
+                  &lt;a class="btn-add-cart" href="#">Add to Cart&lt;img class="icon" src="img/Icons/add-cart.svg"
                     alt="shopping cart icon">&lt;/a><br>
               &lt;/section><br>
             &lt;/div><br>
@@ -1192,63 +1191,90 @@
 
           <h5>Rendered element:</h5>
 
+
+          <div class="flex-item-payment-25">
+              <div class="payment-form-background">
+                  <h2>Order Summary:</h2>
+                  <h5>Items (3): <span class="price">$50.62</span></h5>
+                  <h5>Taxes: <span class="price">$5.63</span></h5>
+                  <h5>Delivery: <span class="price">FREE</span></h5>
+                  <h5 class="element">Total: <span class="price">FREE</span></h5>
+                  <a href="payment.html" class="btn-basic">Checkout</a>
+              </div>
+          </div>
+
           <!--Checkout Item One-->
-          <div class="flex-container">
-            <div class="flex-item-sm">
-              <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-              target="_blank">
-                <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
-              </a>
-            </div>
+          <div class="flex-item-payment-65">
+            <div class="payment-form-background">
+                <h2>Your Cart:</h2>
+                <!--Checkout Item One-->
+                  <div class="flex-container margin-top">
+                      <div class="flex-item-cart">
+                      <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+                      target="_blank">
+                          <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+                      </a>
+                      </div>
 
-            <div class="flex-item-lg">
-              <a class="product-list-title" href="#">The Day You Begin</a>
-              <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+                      <div class="flex-item-lg">
+                          <div>
+                              <a class="product-list-title" href="#">The Day You Begin</a>
+                              <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+                          </div>
 
-              <h5 class="product-list-price">$25.99</h5>
+                          <div class="sum-price">
+                              <h5 class="product-list-price">$25.99</h5>
+                          </div>
 
-              <label class="form-label" for="b-1quantity">Quantity:</label>
-              <select class="form-drop-down" name="quantity" id="b-1quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="4">5</option>
-              </select>
-              <a class="btn-submit" href="#">Delete</a>
+                          <div>
+                              <label for="b1-quantity">Quantity:</label>
+                              <select class="form-drop-down" name="quantity" id="b1-quantity">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="4">5</option>
+                              </select>
+                              <a class="btn-submit" href="#">Delete</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!--Checkout Item One-->
+                  <div class="flex-container margin-top">
+                      <div class="flex-item-cart">
+                      <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
+                      target="_blank">
+                          <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+                      </a>
+                      </div>
+
+                      <div class="flex-item-lg">
+                          <div>
+                              <a class="product-list-title" href="#">The Day You Begin</a>
+                              <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+                          </div>
+
+                          <div class="sum-price">
+                              <h5 class="product-list-price">$25.99</h5>
+                          </div>
+
+                          <div>
+                              <label for="b2-quantity">Quantity:</label>
+                              <select class="form-drop-down" name="quantity" id="b2-quantity">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="4">5</option>
+                              </select>
+                              <a class="btn-submit" href="#">Delete</a>
+                          </div>
+                      </div>
+                  </div>
+
             </div>
           </div>
-
-          <!--Checkout Item Two-->
-          <div class="flex-container">
-            <div class="flex-item-sm">
-              <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-              target="_blank">
-                <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
-              </a>
-            </div>
-
-            <div class="flex-item-lg">
-              <a class="product-list-title" href="#">The Day You Begin</a>
-              <a class="product-list-author" href="#">By Jacqueline Woodson</a>
-
-              <h5 class="product-list-price">$25.99</h5>
-
-              <label for="b-2quantity">Quantity:</label>
-              <select class="form-drop-down" name="quantity" id="b-2quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="4">5</option>
-              </select>
-              <a class="btn-submit" href="#">Delete</a>
-            </div>
-          </div>
-
-          <h2>Total: 72.54</h2>
-          <a class="btn-add-cart" href="#">Proceed to Checkout</a>
-
 
           <h5>CSS selector:</h5>
           <p>.flex-container</p>
@@ -1261,67 +1287,7 @@
           <p>.btn-submit</p>
           <p>.btn-add-cart</p>
 
-          <h5>Sample code:</h5>
-          <code>
-            <!--Checkout Item One-->
-            &lt;div class="flex-container"><br>
-            &lt;div class="flex-item-sm"><br>
-              &lt;a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/" target="_blank"><br>
-                  &lt;img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
-                  &lt;/a><br>
-              &lt;div><br>
 
-              &lt;div class="flex-item-lg"><br>
-                &lt;a class="product-list-title" href="#">The Day You Begin&lt;/a><br>
-                &lt;a class="product-list-author" href="#">By Jacqueline Woodson&lt;/a><br>
-
-                &lt;h5 class="product-list-price">$25.99&lt;/h5><br>
-
-                &lt;label for="quantity">Quantity:&lt;/label><br>
-                &lt;select class="form-drop-down" name="quantity" id="quantity"><br>
-                &lt;option value="1">1&lt;/option><br>
-                &lt;option value="2">2&lt;option><br>
-                &lt;option value="3">3&lt;/option><br>
-                &lt;option value="4">4&lt;/option><br>
-                &lt;option value="4">5&lt;/option><br>
-                            &lt;/select><br>
-                            &lt;a class="btn-submit" href="#">Delete&lt;/a><br>
-
-                            &lt;/div><br>
-
-                &lt;/div><br>
-
-            <!--Checkout Item Two-->
-            &lt;div class="flex-container"><br>
-            &lt;div class="flex-item-sm"><br>
-            &lt;a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/" target="_blank"><br>
-                &lt;img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
-                &lt;/a><br>
-              &lt;div><br>
-
-              &lt;div class="flex-item-lg"><br>
-              &lt;a class="product-list-title" href="#">The Day You Begin&lt;/a><br>
-              &lt;a class="product-list-author" href="#">By Jacqueline Woodson&lt;/a><br>
-
-              &lt;h5 class="product-list-price">$25.99&lt;/h5><br>
-
-              &lt;label for="quantity">Quantity:&lt;/label><br>
-              &lt;select class="form-drop-down" name="quantity" id="quantity"><br>
-              &lt;option value="1">1&lt;/option><br>
-              &lt;option value="2">2&lt;option><br>
-              &lt;option value="3">3&lt;/option><br>
-              &lt;option value="4">4&lt;/option><br>
-              &lt;option value="4">5&lt;/option><br>
-                          &lt;/select>
-                          &lt;a class="btn-submit" href="#">Delete&lt;/a><br>
-
-                          &lt;/div><br>
-
-              &lt;/div><br>
-
-              &lt;h2>Total: 72.54&lt;/h2><br>
-              &lt;a class="btn-add-cart" href="#">Proceed to Checkout&lt;/a><br>
-          </code>
         </section>
 
 
@@ -1546,7 +1512,7 @@
           </section>
 
         <section>
-          <h3>Order Summary</h3>
+          <h3>Footer </h3>
 
           <h5>Rendered element:</h5>
           <!--cite: how to format a responsive footer https://www.web-eau.net/blog/10-best-footer-html-css-snippets-->
@@ -1593,7 +1559,133 @@
 
         </section>
 
+        <!--Book Header Summary-->
+<section class="element">
+  <h3> Single Book Page Listing Component </h3>
+
+        <section class="flex-container-product-single">
+
+          <div class="flex-container-feature-product-single center-content-product-single ">
+              <div class="flex-item-product-single">
+                <a href="#" target="_blank">
+                  <img class="feature-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+                </a>
+              </div>
+
+              <div class="flex-item-product-single">
+                <h2 class="no-margin">The Day You Begin</h2>
+                <h3 class="no-margin">By Jacqueline Woodson</h3>
+
+                <div class="flex-container margin-tb-sm">
+                    <p>Aug 20, 2018 |</p>
+                    <img class="book-rating product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+                </div>
+
+                <div>
+                   <p>Format Options</p>
+                   <a class="btn-reset" href="#">Hard Cover</a>
+                   <a class="btn-reset" href="#">Paperback</a>
+                </div>
+
+                <div>
+                  <h2 class="margin-tb-sm">$25.99</h2>
+                  <a class="margin-tb-sm btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
+                      alt="shopping cart icon"></a>
+                </div>
+
+              </div>
+            </div>
+        </section>
+      </section>
+
+      <section class="element">
+        <h3> Contact Us Element</h3>
+
+        <div class="margin-top background-img">
+          <section class="flex-container-center">
+              <div class="feature-background">
+                  <h1 class="txt-center">Send us a message...</h1>
+                  <p class="txt-center-p">Have a book you want requested? Trouble signing up for an event? Idea you think we would like? Let us know! Please fill out the form below and we will get back to you shortly.</p>
+
+                  <form id="contactForm">
+                     <div class="flex-container-payment">
+                        <div class="flex-item-payment-50">
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" name="name" placeholder="Jane Doe">
+                        </div>
+                        <div class="flex-item-payment-50 ">
+                          <label for="email">Email:</label>
+                          <input type="text" id="email" name="email" placeholder="janedoe@gmail.com">
+                        </div>
+                     </div>
+                        <div class="flex-item-lg" id="contact-message">
+                            <form method="post" action="#">
+                              <label for="message">Message:</label>
+                              <textarea class="padding-bottom" id="message" name="message" placeholder="Message"></textarea>
+                            </form>
+                        </div>
+                        <button class="btn-submit" type="submit" value="Submit">Submit</button>
+                        <button class="btn-reset" type="reset" onclick="resetClear()" value="Reset">Reset</button>
+                      </form>
+              </div>
+
+
+      </section>
+</section>
+
+      <section class="element">
+        <h3> Title Component <h3>
+
+          <div class="margin-top background-img">
+              <section class="flex-container-center">
+                  <div class="feature-background">
+                      <h1 class="txt-center">Welcome to<br> The Book Worm!</h1>
+
+                      <h3 class="txt-center-p">We are an inclusive local kids book store aiming to get children engaged and excited about reading. We are champions of learning and creativity.</h3>
+
+                      <div class="flex-container-center">
+                          <a class="btn-basic margin-right" href="book-listing.html">Shop Books</a>
+                          <a class="btn-basic margin-right" href="event1.html">See Events</a>
+                      </div>
+
+                  </div>
+
+              </section>
+            </div>
+
+      </section>
+
+      <section class="element">
+        <h3> Calendar</h3>
+
+<div class="elfsight-app-457da460-c3ce-4342-b268-b4f0dc49b19f"></div>
+
+      </section>
+
+
+      <section class="element">
+        <h3> Event Component <h3>
+
+          <section class="flex-container-center">
+            <div class="flex-container-event feature-background-event">
+                <img class="event-img" src="img/motherdaughter.jpg" alt="Mother daughter reading week image">
+                <div class="margin-left-event">
+                    <h3>Mother Daughter Reading Week</h3>
+                    <h6> March 10th - 17th</h6>
+                    <p class="flex-item-md">Bond with your daughter in our mother daughter reading week event. Read the books from our curated list or choose your own. Each book you and your daughter read together will enter you to win one of our draw prizes at the end of the week, the more books you read the more enteries you get! Our draw prizes will include; a 50$ gift card to The Book Worm, One free book of your choice, and a calligraphy set</p>
+                    <a class="btn-basic" href="event1.html">Learn More</a>
+                  </div>
+            </div>
+          </section>
+
+
+      </section>
+
+
       </section><!-- // COMBINED ELEMENTS SECTION -->
+
+
+
 
 
 
