@@ -754,6 +754,13 @@ div {
     padding: 2em;
   }
 
+  .center-content-home {
+    margin-bottom: 3em;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+  }
+
   .center-content-product-single {
     margin-bottom: 3em;
     align-items: center;
