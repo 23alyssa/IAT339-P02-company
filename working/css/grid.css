@@ -468,7 +468,7 @@ span.price {
     float: none;
   }
 
-  .btn-basic {
+  #place-now {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
