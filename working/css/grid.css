@@ -275,13 +275,10 @@ span.price {
   Spacing -------------------
 */
 
-.margin-left{
+.margin-left, .margin-left-event, .margin-left-payment {
   margin-left: 3em;
 }
 
-.margin-left-event{
-  margin-left: 3em;
-}
 
 .margin-left-sm{
   margin-left: .5em;
@@ -437,6 +434,10 @@ span.price {
     justify-content: center;
   }
 
+  .margin-left-payment {
+    margin-left: 0;
+  }
+
 }
 
 @media screen and (max-width: 75.625em) {
@@ -457,6 +458,10 @@ span.price {
 
   .event-img{
     max-width: 80%
+  }
+
+  span.price {
+    float: none;
   }
 
 }

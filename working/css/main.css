@@ -487,9 +487,11 @@ div {
   }
 
 
+
   .img-link:hover, .img-link:focus, .checkout-img-link:hover,.checkout-img-link:focus, .feature-img-link:hover, .feature-img-link:focus, .product-img-link:hover, .product-img-link:focus, #nav-cart:hover, #nav-cart:focus {
     opacity: 0.5;
   }
+
 
 
   /*
@@ -704,7 +706,7 @@ div {
     cursor: pointer;
   }
 
-  .checkout-img-link, .feature-img-link {
+  .checkout-img-link, .feature-img-link, .feature-img-no-link {
     max-width: 100%;
     margin-top: 1rem;
   }
