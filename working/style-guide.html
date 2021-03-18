@@ -994,11 +994,11 @@
         <div class="flex-container-payment">
           <div class="flex-item-payment-75">
             <div class="payment-form-background">
-              <form action="/action.php">
+              <form id="paymentForm" action="/action.php">
 
                 <div class="flex-container-payment">
-                  <section class="flex-item-payment-50">
-                    <h3>Billing Address</h3>
+                  <div class="flex-item-payment-50">
+                    <h2>Billing Address</h2>
                     <label for="fname">Full Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
                     <label for="email">Email</label>
@@ -1018,26 +1018,29 @@
                         <input type="text" id="zip" name="zip" placeholder="10001">
                       </div>
                     </div>
-                  </section>
+                  </div>
 
-                  <section class="flex-item-payment-50 ">
-                    <h3>Payment</h3>
+                  <div class="flex-item-payment-50 ">
+                    <h2>Payment</h2>
                     <label for="fname">Accepted Cards</label>
                     <div class="flex-container">
                       <div>
-                        <input type="radio" id="visa" name="payment type" value="visa">
+                        <input class="form-radio-btn" type="radio" id="visa" name="payment type" value="visa">
                         <label class="form-radio-label" for="visa">Visa</label><br>
                       </div>
 
                       <div>
-                        <input type="radio" id="mastercard" name="payment type" value="mastercard">
+                        <input class="form-radio-btn" type="radio" id="mastercard" name="payment type" value="mastercard">
                         <label class="form-radio-label" for="mastercard">MasterCard</label><br>
                       </div>
 
                       <div>
-                        <input type="radio" id="debit" name="payment-type" value="debit">
-                        <label class="form-radio-label" for="debit">Debit</label><br>
+                        <input class="form-radio-btn" type="radio" id="other" name="payment type" value="other">
+                        <label class="form-radio-label" for="other">Other</label><br><br>
                       </div>
+
+
+
                     </div>
 
                     <label for="cname">Name on Card</label>
@@ -1056,28 +1059,31 @@
                         <input type="text" id="cvv" name="cvv" placeholder="352">
                       </div>
                     </div>
-                  </section>
+                  </div>
 
                 </div>
                 <label class="form-check-container">Shipping Address same as Billing
                   <input type="checkbox" checked="checked">
                   <span class="checkmark"></span>
                 </label>
-                <input class="btn-submit" type="submit" value="Continue to checkout">
+                <button class="btn-reset" type="reset" onclick="resetClear()" value="Reset">Reset</button>
               </form>
             </div>
           </div>
 
-          <aside class="flex-item-payment-25">
+          <div class="flex-item-payment-25">
             <div class="payment-form-background">
-              <h3 class="element-bottom">Total</h3>
-              <h5>Sub-Total: <span class="price">$50.62</span></h5>
+              <h2>Total</h2>
+              <h5>Items (3): <span class="price">$50.62</span></h5>
               <h5>Taxes: <span class="price">$5.63</span></h5>
               <h5>Delivery: <span class="price">FREE</span></h5>
-              <a href="#" class="btn-basic">Confirm Order</a>
+              <h5 class="element">Total: <span class="price">FREE</span></h5>
+              <a href="thanks.html" class="btn-basic">Place Order Now</a>
             </div>
-          </aside>
+          </div>
         </div>
+
+
 
         <h5>CSS selector:</h5>
         <p>.flex-container-payment</p>
