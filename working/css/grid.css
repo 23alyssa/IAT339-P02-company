@@ -474,6 +474,7 @@ span.price {
     flex-wrap: wrap;
 
     text-align: center;
+    justify-content: center;
   }
 
 }
