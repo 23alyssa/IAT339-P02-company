@@ -11,6 +11,8 @@
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <script type="text/javascript" src="javascript/javascript.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- FONT IMPORT BY LINK-->
   <!--cite: how to change fonts used by google via link from https://www.w3schools.com/css/css_font_google.asp-->
@@ -30,8 +32,8 @@
 
 <body>
 
-  <!-- cite flexblox navbar right aligned from https://freshman.tech/flexbox-navbar/-->
-  <header>
+  <header id="top">
+
 
     <div class="topnav" id="myTopnav">
       <a href="index.html" class="topnav-home"><img class="nav-logo" src="img/logo-header.svg" alt="The Book Work Logo"></a>
@@ -48,31 +50,36 @@
           </a>
       </div>
 
-     </div>
+    </div>
 
-  </header>
+</header>
+
+</header>
 
 
   <!-- FEATURE BOOK OF MONTH-->
-  <section class="flex-container-feature">
+  <div class="margin-top background-img">
+    <section class="flex-container-feature">
       <div class="flex-container-feature feature-background">
         <div class="flex-item-feature-img">
-          <a href="#" target="_blank">
+          <a href="book-single.html">
             <img class="feature-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
           </a>
         </div>
 
         <div class="flex-item-feature-txt">
           <h3>Feature Book of the Month</h3>
-          <a class="product-list-title" href="#">The Day You Begin</a>
+          <a class="product-list-title" href="book-single.html">The Day You Begin</a>
           <a class="product-list-author" href="#">By Jacqueline Woodson</a>
           <p>
             National Book Award winner Jacqueline Woodson and two-time Pura Belpré Illustrator Award winner Rafael López have teamed up to create a poignant, yet heartening book about finding courage to connect, even when you feel scared and alone.
           </p>
-          <a class="btn-basic" href="#">Learn More</a>
+          <a class="btn-basic" href="book-single.html">Learn More</a>
         </div>
       </div>
   </section>
+  </div>
+
 
   <!-- ASIDE FILTERS -->
   <div class="flex-container">
@@ -84,17 +91,17 @@
           <input type="checkbox" checked="checked">
           <span class="checkmark"></span>
         </label>
-        
+
         <label class="form-check-container">3-5 years
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
-        
+
         <label class="form-check-container">6-8 years
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
-        
+
         <label class="form-check-container">9-12 years
           <input type="checkbox">
           <span class="checkmark"></span>
@@ -102,25 +109,24 @@
       </form>
     </aside>
 
-    
-    <!-- PRODUCT -->    
+
+    <!-- PRODUCT -->
     <section>
       <!-- PRODUCT SECTION IMAGINATION -->
       <section>
-        <h2 class="product-section">Filled with Creativity</h2>
+        <h2 class="product-section">Going on an Adventure</h2>
 
         <div class="flex-container-products">
 
           <!-- book 1 -->
           <div class="flex-item-product">
-            <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-            target="_blank">
-            <img class="product-img-link" src="img/sample-book.jpg"
-              alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+            <a href="book-single.html">
+            <img class="product-img-link" src="img/books/adventure/land-of-stories.jpg"
+              alt="the Land of Stories">
             </a>
 
-            <a class="product-list-title" href="#">The Day You Begin</a>
-            <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+            <a class="product-list-title" href="book-single.html">The Land of Stories</a>
+            <a class="product-list-author" href="#">By Chris Colfer</a>
 
 
             <div>
@@ -128,20 +134,19 @@
             </div>
 
             <h5 class="product-list-price">$25.99</h5>
-            <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+            <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
                 alt="shopping cart icon"></a>
           </div>
 
           <!-- book 2 -->
           <div class="flex-item-product">
-            <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-            target="_blank">
-            <img class="product-img-link" src="img/sample-book.jpg"
-              alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+            <a href="book-single.html">
+            <img class="product-img-link" src="img/books/adventure/charlie-chocolate-factory.jpg"
+              alt="charlie and the chocolate factory">
             </a>
 
-            <a class="product-list-title" href="#">The Day You Begin</a>
-            <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+            <a class="product-list-title" href="book-single.html">Charlie and the Chocolate Factory</a>
+            <a class="product-list-author" href="#">By Rol Dahl</a>
 
 
             <div>
@@ -149,21 +154,20 @@
             </div>
 
             <h5 class="product-list-price">$25.99</h5>
-            <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+            <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
                 alt="shopping cart icon"></a>
           </div>
 
 
           <!-- book 3 -->
           <div class="flex-item-product">
-            <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-            target="_blank">
-            <img class="product-img-link" src="img/sample-book.jpg"
-              alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+            <a href="book-single.html">
+            <img class="product-img-link" src="img/books/adventure/journey-edward-tulane.jpg"
+              alt="the miraculous journey of edward tulane">
             </a>
 
-            <a class="product-list-title" href="#">The Day You Begin</a>
-            <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+            <a class="product-list-title" href="book-single.html">The Miraculous Journey of Edward Tulane</a>
+            <a class="product-list-author" href="#">By Kate Dicamilo</a>
 
 
             <div>
@@ -171,21 +175,20 @@
             </div>
 
             <h5 class="product-list-price">$25.99</h5>
-            <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+            <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
                 alt="shopping cart icon"></a>
           </div>
 
 
           <!-- book 4 -->
           <div class="flex-item-product">
-            <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-            target="_blank">
-            <img class="product-img-link" src="img/sample-book.jpg"
-              alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+            <a href="book-single.html">
+            <img class="product-img-link" src="img/books/adventure/lightning-thief.jpg"
+              alt="The lightning thief">
             </a>
 
-            <a class="product-list-title" href="#">The Day You Begin</a>
-            <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+            <a class="product-list-title" href="book-single.html">The Lightning Thief</a>
+            <a class="product-list-author" href="#">By Rick Riordian</a>
 
 
             <div>
@@ -193,7 +196,7 @@
             </div>
 
             <h5 class="product-list-price">$25.99</h5>
-            <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+            <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
                 alt="shopping cart icon"></a>
           </div>
 
@@ -203,20 +206,19 @@
 
      <!-- PRODUCT SECTION ADVENTURE -->
     <section>
-      <h2 class="product-section">Going on an Adventure</h2>
+      <h2 class="product-section">Filled with Creativity</h2>
 
       <div class="flex-container-products">
 
         <!-- book 1 -->
         <div class="flex-item-product">
-          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-          target="_blank">
-          <img class="product-img-link" src="img/sample-book.jpg"
-            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          <a href="book-single.html">
+          <img class="product-img-link" src="img/books/creativity/beautiful-oops.jpg"
+            alt="the beautiful oops book">
           </a>
 
-          <a class="product-list-title" href="#">The Day You Begin</a>
-          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+          <a class="product-list-title" href="book-single.html">Beautiful Oops</a>
+          <a class="product-list-author" href="#">By Barney Saltzberg</a>
 
 
           <div>
@@ -224,20 +226,19 @@
           </div>
 
           <h5 class="product-list-price">$25.99</h5>
-          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+          <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
               alt="shopping cart icon"></a>
         </div>
 
         <!-- book 2 -->
         <div class="flex-item-product">
-          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-          target="_blank">
-          <img class="product-img-link" src="img/sample-book.jpg"
-            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          <a href="book-single.html">
+          <img class="product-img-link" src="img/books/creativity/magic-mystery-trees.jpg"
+            alt="Magic Mystery Trees Book">
           </a>
 
-          <a class="product-list-title" href="#">The Day You Begin</a>
-          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+          <a class="product-list-title" href="book-single.html">The Magic and Mystery of Trees</a>
+          <a class="product-list-author" href="#">By Dr Jen Green</a>
 
 
           <div>
@@ -245,21 +246,20 @@
           </div>
 
           <h5 class="product-list-price">$25.99</h5>
-          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+          <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
               alt="shopping cart icon"></a>
         </div>
 
 
         <!-- book 3 -->
         <div class="flex-item-product">
-          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-          target="_blank">
-          <img class="product-img-link" src="img/sample-book.jpg"
-            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          <a href="book-single.html">
+          <img class="product-img-link" src="img/books/creativity/the-dot.jpg"
+            alt="the dot book">
           </a>
 
-          <a class="product-list-title" href="#">The Day You Begin</a>
-          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+          <a class="product-list-title" href="book-single.html">The Dot</a>
+          <a class="product-list-author" href="#">By Peter H. Reynolds</a>
 
 
           <div>
@@ -267,21 +267,20 @@
           </div>
 
           <h5 class="product-list-price">$25.99</h5>
-          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+          <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
               alt="shopping cart icon"></a>
         </div>
 
 
         <!-- book 4 -->
         <div class="flex-item-product">
-          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-          target="_blank">
-          <img class="product-img-link" src="img/sample-book.jpg"
-            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          <a href="book-single.html">
+          <img class="product-img-link" src="img/books/creativity/what-do-with-box.jpg"
+            alt="what to do with a box ">
           </a>
 
-          <a class="product-list-title" href="#">The Day You Begin</a>
-          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+          <a class="product-list-title" href="book-single.html">What to do With a Box</a>
+          <a class="product-list-author" href="#">By Jane Yolen and Chris Sheban</a>
 
 
           <div>
@@ -289,10 +288,10 @@
           </div>
 
           <h5 class="product-list-price">$25.99</h5>
-          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+          <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
               alt="shopping cart icon"></a>
         </div>
-        
+
       </div>
     </section>
 
@@ -304,14 +303,13 @@
 
         <!-- book 1 -->
         <div class="flex-item-product">
-          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-          target="_blank">
-          <img class="product-img-link" src="img/sample-book.jpg"
-            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          <a href="book-single.html">
+          <img class="product-img-link" src="img/books/diversity/families-families.jpg"
+            alt="Families Families Families">
           </a>
 
-          <a class="product-list-title" href="#">The Day You Begin</a>
-          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+          <a class="product-list-title" href="book-single.html">Families Families Families</a>
+          <a class="product-list-author" href="#">By Suzanne Lang and Max Lang</a>
 
 
           <div>
@@ -319,20 +317,19 @@
           </div>
 
           <h5 class="product-list-price">$25.99</h5>
-          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+          <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
               alt="shopping cart icon"></a>
         </div>
 
         <!-- book 2 -->
         <div class="flex-item-product">
-          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-          target="_blank">
-          <img class="product-img-link" src="img/sample-book.jpg"
-            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          <a href="book-single.html">
+          <img class="product-img-link" src="img/books/diversity/hate-u-give.jpg"
+            alt="The hate you give book">
           </a>
 
-          <a class="product-list-title" href="#">The Day You Begin</a>
-          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+          <a class="product-list-title" href="book-single.html">The Hate You Give</a>
+          <a class="product-list-author" href="#">By Angie Thomas</a>
 
 
           <div>
@@ -340,21 +337,20 @@
           </div>
 
           <h5 class="product-list-price">$25.99</h5>
-          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+          <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
               alt="shopping cart icon"></a>
         </div>
 
 
         <!-- book 3 -->
         <div class="flex-item-product">
-          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-          target="_blank">
-          <img class="product-img-link" src="img/sample-book.jpg"
-            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          <a href="book-single.html">
+          <img class="product-img-link" src="img/books/diversity/this-is-how-we-do-it.jpg"
+            alt="This is how we do it book">
           </a>
 
-          <a class="product-list-title" href="#">The Day You Begin</a>
-          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+          <a class="product-list-title" href="book-single.html">This is How We Do it</a>
+          <a class="product-list-author" href="#">By Matt Lamothe</a>
 
 
           <div>
@@ -362,21 +358,20 @@
           </div>
 
           <h5 class="product-list-price">$25.99</h5>
-          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+          <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
               alt="shopping cart icon"></a>
         </div>
 
 
         <!-- book 4 -->
         <div class="flex-item-product">
-          <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-          target="_blank">
-          <img class="product-img-link" src="img/sample-book.jpg"
-            alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+          <a href="book-single.html">
+          <img class="product-img-link" src="img/books/diversity/wonder.jpeg"
+            alt="Wonder book">
           </a>
 
-          <a class="product-list-title" href="#">The Day You Begin</a>
-          <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+          <a class="product-list-title" href="book-single.html">Wonder</a>
+          <a class="product-list-author" href="#">By R.J Palacio</a>
 
 
           <div>
@@ -384,14 +379,14 @@
           </div>
 
           <h5 class="product-list-price">$25.99</h5>
-          <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/cart.svg"
+          <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
               alt="shopping cart icon"></a>
         </div>
-        
+
       </div>
     </section>
   </section>
-  
+
   </div>
 
   <!--Footer-->
