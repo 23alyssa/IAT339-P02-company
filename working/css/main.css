@@ -689,6 +689,10 @@ div {
     max-width: 60%;
   }
 
+  .book-single-2-pic {
+    max-width: 35%;
+  }
+
   .book-rating {
     margin-top: -1em;
     padding: 0.2rem 0 0.2rem 0;
