@@ -369,6 +369,10 @@ span.price {
     margin: 1em;
   }
 
+  #shop-collections {
+    margin: 0;
+  }
+
   #similar-books {
     margin: 0;
   }
@@ -392,6 +396,10 @@ span.price {
   }
 
   .img-sm {
+    max-width: 100%;
+  }
+
+  #book-single-2-pic {
     max-width: 100%;
   }
 
