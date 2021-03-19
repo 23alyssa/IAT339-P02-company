@@ -11,7 +11,7 @@
   .columns {
     flex-direction: column;
   }
-  
+
   .flex-container, .flex-container-nav, .flex-container-feature, .flex-container-products, .flex-container-order-sum, .flex-container-feature-product-single, .flex-container-event {
     display: -webkit-flex;
     display: -ms-flex;
@@ -265,13 +265,13 @@ span.price {
 
 .flex-item-feature-author {
   align-self: baseline;
-  max-width: 50%; 
+  max-width: 50%;
   height: auto;
   margin-right: 3em;
   flex-direction: row;
 }
 
-/* 
+/*
   Spacing -------------------
 */
 
@@ -319,12 +319,12 @@ span.price {
 
 
 
-/* 
+/*
   MEDIA QUERY -------------------
 */
 
 
-@media screen and (max-width: 38.625em) {
+@media screen and (max-width: 60.625em) {
 
   .flex-container {
     -webkit-flex-wrap: wrap;
@@ -570,4 +570,3 @@ span.price {
     }
 
 }
-
