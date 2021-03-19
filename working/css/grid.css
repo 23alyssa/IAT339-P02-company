@@ -399,6 +399,10 @@ span.price {
     max-width: 100%;
   }
 
+  #book-single-2-pic {
+    max-width: 100%;
+  }
+
   body {
     padding: 0.5rem;
   }
