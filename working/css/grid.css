@@ -324,7 +324,7 @@ span.price {
 */
 
 
-@media screen and (max-width: 60.625em) {
+@media screen and (max-width: 59.625em) {
 
   .flex-container {
     -webkit-flex-wrap: wrap;
