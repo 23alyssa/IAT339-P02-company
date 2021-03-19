@@ -662,18 +662,17 @@
 
 
         <h5>Rendered element:</h5>
-        <h1>This is a h1 heading</h1>
+        <h1 class="txt-center">This is a h1 heading</h1>
         <p class="txt-headings-info">Font-Dosis, Style-normal, weight-bold, size-5rem</p>
 
         <h2>This is a h2 heading</h2>
         <p class="txt-headings-info">Font-Dosis, Style-normal, weight-bold, size-2.5rem</p>
 
-        <h2 class="element-bottom"> This is an underlined h2 heading</h2>
-        <p class="txt-headings-info">Font-Dosis, Style-normal, weight-bold, size-2.5rem</p>
+        <h3 class="element-bottom"> This is an underlined h2 heading</h3>
+        <p class="txt-headings-info">Font-Dosis, Style-normal, weight-300, size-2.2rem/p>
 
         <h3>This is a h3 heading</h3>
         <p class="txt-headings-info">Font-Dosis, Style-normal, weight-300, size-2.2rem</p>
-
 
         <h4>This is a h4 heading</h4>
         <p class="txt-headings-info">Font-Dosis, Style-normal, weight-500, size-2rem</p>
@@ -692,11 +691,13 @@
         <!--cite: lecture knowledge week 1 how to create a heading-->
 
         <h5>CSS selectors:</h5>
-        <p>.txt-h1 //page title</p>
-        <p>.txt-h2 //bold sub-section</p>
-        <p>.txt-h3 //regular sub-section</p>
-        <p>.txt-h4 //small subtitle</p>
-        <p>.txt-h5 //body paragraph title</p>
+        <p>h1 //page title</p>
+        <p>.h2 //bold sub-section</p>
+        <p>h3 //regular sub-section</p>
+        <p>h4 //small subtitle</p>
+        <p>h5 //body paragraph title</p>
+        <p>element-bottom //underlined title</p>
+        <p>.txt-center //center text</p>
         <p>.product-list-title" //product listing book author</p>
         <p>.product-list-author //product listing book author</p>
         <p>.product-list-price //product price listing</p>
@@ -704,6 +705,7 @@
         <h5>Sample code:</h5>
         <code>&lt;h1>This is a h1 heading&lt;/h1></code>
         <code>&lt;h2>This is a h2 heading&lt;/h2></code>
+        <code>&lt;h2 class="element-bottom">This is a h2 heading&lt;/h2></code>
         <code>&lt;h3>This is a h3 heading&lt;/h3></code>
         <code>&lt;h4>This is a h4 heading&lt;/h4></code>
         <code>&lt;h5>This is a h5 heading&lt;/h5></code>
@@ -727,6 +729,41 @@
         <p>p</p>
         <p>flex-container</p>
         <p>flex-item-lg</p>
+
+        <h5>Sample code:</h5>
+        <code>
+          &lt;div class="flex-container"><br>
+            &lt;p class="flex-item-lg">This is a paragraph element.&lt;/p><br>
+          &lt;/div><br>
+        </code>
+
+      </section>
+
+      <!-- Default subtitle & paragraph -->
+      <section class="element">
+        <h3>Title & Paragraphs</h3>
+
+        <h5>Rendered element:</h5>
+        <!--About the book-->
+        <section class="flex-container-center">
+          <div class="flex-container-product-single-txt">
+              <h2>About the Book</h2>
+              <div class="flex-container">
+                <p class="flex-item-feature-txt element">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  <br><br>
+              </p>
+              </div>
+            </div>
+        </section>
+
+        <h5>CSS selector:</h5>
+        <p>p</p>
+        <p>.flex-container-center</p>
+        <p>.flex-container-product-single-txt</p>
+        <p>.flex-container</p>
+        <p>.flex-item-feature-txt</p>
+        <p>.element</p>
 
         <h5>Sample code:</h5>
         <code>
@@ -829,30 +866,11 @@
 
 
         <h5>CSS selector:</h5>
-        <p>.txt-nav</p>
-        <p>.flex-container-nav</p>
-        <p>.flex-container-nav</p>
-        <p>.flex-item-nav</p>
-        <p>.txt-nav</p>
-
-        <h5>Sample code:</h5>
-        <code>
-          &lt;header id="flex-container-nav"><br>
-
-          &lt;div class="flex-item-xsm"><br>
-          &lt;img id="nav-logo" src="img/logo-header.svg" alt="The Book Work Logo"><br>
-              &lt;/div><br>
-
-              &lt;nav id="flex-item-nav"><br>
-              &lt;a class="txt-nav" href="">Books&lt;/a><br>
-              &lt;a class="txt-nav" href="">Events&lt;/a><br>
-              &lt;a class="txt-nav" href="">About&lt;/a><br>
-              &lt;a class="txt-nav" href="">Contact&lt;/a><br>
-              &lt;a class="txt-nav" href="">&lt;img id="nav-cart" src="img/Icons/nav-cart.svg" alt="cart icon">&lt;/a><br>
-              &lt;/nav><br>
-
-              &lt;/header><br>
-        </code>
+        <p>.topnav</p>
+        <p>.topnav-home</p>
+        <p>.topnav-cart</p>
+        <p>.topnav-body</p>
+        <p>#myTopnav</p>
 
       </section>
 
@@ -894,35 +912,6 @@
         <p>.form-check-container</p>
         <p>.checkmark</p>
 
-        <h5>Sample code:</h5>
-        <code>
-          &lt;aside class="aside-filter flex-item-lg"><br>
-          &lt;form class="aside-form" method="post" action="#"><br>
-          &lt;h4>Please select an option:&lt;/h4><br>
-          &lt;label class="form-check-container">0-2 years
-          &lt;input type="checkbox" checked="checked"><br>
-          &lt;span class="checkmark">&lt;/span><br>
-          &lt;/label><br>
-
-          &lt;label class="form-check-container">3-5 years
-          &lt;input type="checkbox"><br>
-          &lt;span class="checkmark">&lt;/span><br>
-          &lt;/label><br>
-
-          &lt;label class="form-check-container">6-8 years
-          &lt;input type="checkbox"><br>
-          &lt;span class="checkmark">&lt;/span><br>
-          &lt;/label><br>
-
-          &lt;label class="form-check-container">9-12 years
-          &lt;input type="checkbox"><br>
-          &lt;span class="checkmark">&lt;/span><br>
-          &lt;/label><br>
-          &lt;/form><br>
-          &lt;/aside><br>
-
-        </code>
-
       </section>
 
       <!-- product listing -->
@@ -933,16 +922,15 @@
 
         <div class="flex-container-products">
           <div class="flex-item-md">
-            <!-- book 1 -->
-          <section class="flex-item-product">
-            <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-            target="_blank">
-            <img class="product-img-link" src="img/sample-book.jpg"
-              alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+            <!-- book 4 -->
+            <div class="flex-item-product">
+            <a href="book-single-2.html">
+            <img class="product-img-link" src="img/books/adventure/lightning-thief.jpg"
+              alt="The lightning thief">
             </a>
 
-            <a class="product-list-title" href="#">The Day You Begin</a>
-            <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+            <a class="product-list-title" href="book-single-2.html">The Lightning Thief</a>
+            <a class="product-list-author" href="#">By Rick Riordan</a>
 
 
             <div>
@@ -950,9 +938,9 @@
             </div>
 
             <h5 class="product-list-price">$25.99</h5>
-            <a class="btn-add-cart" href="#">Add to Cart<img class="icon" src="img/Icons/add-cart.svg"
+            <a class="btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
                 alt="shopping cart icon"></a>
-            </section>
+          </div>
           </div>
         </div>
 
@@ -963,32 +951,13 @@
         <p>.product-list-review</p>
         <p>.product-list-price</p>
         <p>.btn-add-cart</p>
-        <p>.icon</p>
+        <p>.cart-icon</p>
+        <p>.flex-item-product</p>
+        <p>.flex-container-product</p>
+        <p>.product-img-link</p>
+        <p>.flex-item-md</p>
 
-        <h5>Sample code:</h5>
-        <code>
-          &lt;div class="flex-container-products"><br>
-            <!-- book 1 -->
-            &lt;section class="flex-item-product"><br>
-              &lt;a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-                target="_blank"><br>
-                &lt;img class="product-img-link" src="img/sample-book.jpg"
-                  alt="The day you begin by By Jacqueline Woodson & Rafael Lopez"><br>
-                  &lt;/a><br>
-
-                  &lt;a class="product-list-title" href="#">The Day You Begin&lt;/a><br>
-                  &lt;a class="product-list-author" href="#">By Jacqueline Woodson&lt;/a><br>
-
-                  &lt;div><br>
-                  &lt;img class="product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5"><br>
-                  &lt;/div><br>
-
-                  &lt;h5 class="product-list-price">$25.99&lt;/h5><br>
-                  &lt;a class="btn-add-cart" href="#">Add to Cart&lt;img class="icon" src="img/Icons/add-cart.svg"
-                    alt="shopping cart icon">&lt;/a><br>
-              &lt;/section><br>
-            &lt;/div><br>
-        </code>
+        
       </section>
 
       <!-- payment form section -->
@@ -1085,7 +1054,7 @@
               <h5>Taxes: <span class="price">$5.63</span></h5>
               <h5>Delivery: <span class="price">FREE</span></h5>
               <h5 class="element">Total: <span class="price">FREE</span></h5>
-              <a href="thanks.html" class="btn-basic">Place Order Now</a>
+              <a href="thanks.html" class="btn-basic" id="place-now">Place Order Now</a>
             </div>
           </div>
         </div>
@@ -1097,104 +1066,14 @@
         <p>.flex-item-payment-75</p>
         <p>.payment-form-background</p>
         <p>.flex-item-payment-50 </p>
-        <p>.form-radio-label</p>
         <p>.btn-submit</p>
         <p>.flex-item-payment-25</p>
         <p>.element-bottom</p>
-        <p>.class="price"</p>
+        <p>.element</p>
+        <p>.price</p>
         <p>.btn-basic</p>
+        <p>#place-now</p>
 
-
-        <h5>Sample code:</h5>
-        <code>
-          &lt;section class="flex-container-payment"><br>
-          &lt;div class="flex-item-payment-75"><br>
-          &lt;div class="payment-form-background"><br>
-          &lt;form action="/action.php"><br>
-          <br>
-            &lt;div class="flex-container-payment"><br>
-            &lt;section class="flex-item-payment-50 "><br>
-              &lt;h3>Billing Address&lt;/h3><br>
-              &lt;label for="fname">Full Name&lt;/label><br>
-              &lt;input type="text" id="fname" name="firstname" placeholder="John M. Doe"><br>
-              &lt;label for="email">Email&lt;/label><br>
-              &lt;input type="text" id="email" name="email" placeholder="john@example.com"><br>
-              &lt;label for="adr">Address&lt;/label><br>
-              &lt;input type="text" id="adr" name="address" placeholder="542 W. 15th Street"><br>
-              &lt;label for="city">City&lt;/label><br>
-              &lt;input type="text" id="city" name="city" placeholder="New York"><br>
-              <br>
-              &lt;div class="flex-container-payment"><br>
-              &lt;div class="flex-item-payment-50 "><br>
-                &lt;label for="state">State&lt;/label><br>
-                &lt;input type="text" id="state" name="state" placeholder="NY"><br>
-              &lt;/div><br>
-              &lt;div class="flex-item-payment-50 "><br>
-                &lt;label for="zip">Zip&lt;/label><br>
-                &lt;input type="text" id="zip" name="zip" placeholder="10001"><br>
-              &lt;/div><br>
-              &lt;/div><br>
-            &lt;/section><br>
-            <br>
-            &lt;section class="flex-item-payment-50 "><br>
-            &lt;h3>Payment&lt;/h3><br>
-              &lt;label for="fname">Accepted Cards&lt;/label><br>
-              &lt;div class="flex-container"><br>
-              &lt;div><br>
-                &lt;input class="form-radio-btn" type="radio" id="visa" name="payment type" value="visa"><br>
-                &lt;label class="form-radio-label" for="visa">Visa&lt;/label><br><br>
-              &lt;/div><br>
-
-              &lt;div><br>
-                &lt;input class="form-radio-btn" type="radio" id="mastercard" name="payment type" value="mastercard"><br>
-                &lt;label class="form-radio-label" for="mastercard">MasterCard&lt;/label><br><br>
-              &lt;/div><br>
-
-              &lt;div><br>
-                &lt;input class="form-radio-btn" type="radio" id="debit" name="payment-type" value="debit"><br>
-                &lt;label class="form-radio-label" for="debit">Debit&lt;/label><br><br>
-              &lt;/div><br>
-              &lt;/div><br>
-
-              &lt;label for="cname">Name on Card&lt;/label><br>
-                &lt;input type="text" id="cname" name="cardname" placeholder="John More Doe"><br>
-                &lt;label for="ccnum">Credit card number&lt;label><br>
-                &lt;input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br>
-                &lt;label for="expmonth">Exp Month&lt;/label><br>
-                &lt;input type="text" id="expmonth" name="expmonth" placeholder="September"><br>
-                &lt;div class="flex-container-payment"><br>
-                &lt;div class="flex-item-payment-50 "><br>
-                &lt;label for="expyear">Exp Year&lt;/label><br>
-                &lt;input type="text" id="expyear" name="expyear" placeholder="2018"><br>
-              &lt;/div><br>
-              &lt;div class="flex-item-payment-50 "><br>
-                &lt;label for="cvv">CVV&lt;/label><br>
-                &lt;input type="text" id="cvv" name="cvv" placeholder="352"><br>
-              &lt;/div><br>
-              &lt;/div><br>
-            &lt;/section><br>
-
-            &lt;/div><br>
-            &lt;label class="form-check-container">Shipping Address same as Billing
-            &lt;input type="checkbox" checked="checked"><br>
-            &lt;span class="checkmark">&lt;/span><br>
-            &lt;/label><br>
-            &lt;input class="btn-submit" type="submit" value="Continue to checkout"><br>
-          &lt;/form><br>
-          &lt;/div><br>
-          &lt;/div><br>
-          <br>
-          &lt;aside class="flex-item-payment-25"><br>
-            &lt;div class="payment-form-background"><br>
-              &lt;h3 class="element-bottom">Total&lt;/h3><br>
-              &lt;h5>Sub-Total: &lt;span class="price">$50.62&lt;/span>&lt;/h5><br>
-              &lt;h5>Taxes: &lt;span class="price">$5.63&lt;/span>&lt;/h5><br>
-              &lt;h5>Delivery: &lt;span class="price">FREE&lt;/span>&lt;/h5><br>
-              &lt;a href="#" class="btn-basic">Confirm Order&lt;/a><br>
-            &lt;/div><br>
-            &lt;/aside><br>
-            &lt;/section><br>
-        </code>
       </section>
 
 
@@ -1204,91 +1083,89 @@
 
           <h5>Rendered element:</h5>
 
-
-          <div class="flex-item-payment-25">
-              <div class="payment-form-background">
-                  <h2>Order Summary:</h2>
-                  <h5>Items (3): <span class="price">$50.62</span></h5>
-                  <h5>Taxes: <span class="price">$5.63</span></h5>
-                  <h5>Delivery: <span class="price">FREE</span></h5>
-                  <h5 class="element">Total: <span class="price">FREE</span></h5>
-                  <a href="payment.html" class="btn-basic">Checkout</a>
-              </div>
-          </div>
-
-          <!--Checkout Item One-->
-          <div class="flex-item-payment-65">
-            <div class="payment-form-background">
-                <h2>Your Cart:</h2>
-                <!--Checkout Item One-->
-                  <div class="flex-container margin-top">
-                      <div class="flex-item-cart">
-                      <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-                      target="_blank">
-                          <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
-                      </a>
-                      </div>
-
-                      <div class="flex-item-lg">
-                          <div>
-                              <a class="product-list-title" href="#">The Day You Begin</a>
-                              <a class="product-list-author" href="#">By Jacqueline Woodson</a>
-                          </div>
-
-                          <div class="sum-price">
-                              <h5 class="product-list-price">$25.99</h5>
-                          </div>
-
-                          <div>
-                              <label for="b1-quantity">Quantity:</label>
-                              <select class="form-drop-down" name="quantity" id="b1-quantity">
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="4">5</option>
-                              </select>
-                              <a class="btn-submit" href="#">Delete</a>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!--Checkout Item One-->
-                  <div class="flex-container margin-top">
-                      <div class="flex-item-cart">
-                      <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-                      target="_blank">
-                          <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
-                      </a>
-                      </div>
-
-                      <div class="flex-item-lg">
-                          <div>
-                              <a class="product-list-title" href="#">The Day You Begin</a>
-                              <a class="product-list-author" href="#">By Jacqueline Woodson</a>
-                          </div>
-
-                          <div class="sum-price">
-                              <h5 class="product-list-price">$25.99</h5>
-                          </div>
-
-                          <div>
-                              <label for="b2-quantity">Quantity:</label>
-                              <select class="form-drop-down" name="quantity" id="b2-quantity">
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="4">5</option>
-                              </select>
-                              <a class="btn-submit" href="#">Delete</a>
-                          </div>
-                      </div>
-                  </div>
-
+          <div class="margin-top flex-container-payment rows">
+            <div class="flex-item-payment-65">
+                <div class="payment-form-background">
+                    <h2>Your Cart:</h2>
+                    <!--Checkout Item One-->
+                    <div class="flex-container margin-top">
+                        <div class="flex-item-cart">
+                        <a href="book-single.html">
+                            <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson">
+                        </a>
+                        </div>
+    
+                        <div class="flex-item-lg">
+                            <div>
+                                <a class="product-list-title" href="#">The Day You Begin</a>
+                                <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+                            </div>
+    
+                            <div class="sum-price">
+                                <h5 class="product-list-price">$25.99</h5>
+                            </div>
+    
+                            <div>
+                                <label for="b1-quantity">Quantity:</label>
+                                <select class="form-drop-down margin-bottom-sm" name="quantity" id="b1-quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="4">5</option>
+                                </select>
+                                <a class="btn-submit" href="#">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--Checkout Item two-->
+                    <div class="flex-container margin-top-sm">
+                        <div class="flex-item-cart">
+                        <a href="book-single.html">
+                            <img class="checkout-img-link" src="img/books/adventure/lightning-thief.jpg" alt="the lightning theif by Rick Riordian">
+                        </a>
+                        </div>
+    
+                        <div class="flex-item-lg">
+                            <div>
+                                <a class="product-list-title" href="#">The Lightning Thief</a>
+                                <a class="product-list-author" href="#">By Rick Riordian</a>
+                            </div>
+    
+                            <div class="sum-price">
+                                <h5 class="product-list-price">$15.99</h5>
+                            </div>
+    
+                            <div>
+                                <label for="b2-quantity">Quantity:</label>
+                                <select class="form-drop-down margin-bottom-sm" name="quantity" id="b2-quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="4">5</option>
+                                </select>
+                                <a class="btn-submit" href="#">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
             </div>
-          </div>
-
+    
+            <div class="flex-item-payment-25">
+                <div class="payment-form-background">
+                    <h2>Order Summary:</h2>
+                    <h5>Items (3): <span class="price">$50.62</span></h5>
+                    <h5>Taxes: <span class="price">$5.63</span></h5>
+                    <h5>Delivery: <span class="price">FREE</span></h5>
+                    <h5 class="element">Total: <span class="price">FREE</span></h5>
+                    <a href="payment.html" class="btn-basic">Checkout</a>
+                </div>
+            </div>
+    
+         </div>
           <h5>CSS selector:</h5>
           <p>.flex-container</p>
           <p>.flex-item-sm</p>
@@ -1299,6 +1176,15 @@
           <p>.form-drop-down</p>
           <p>.btn-submit</p>
           <p>.btn-add-cart</p>
+          <p>.flex-container-payment</p>
+          <p>.flex-item-payment-75</p>
+          <p>.payment-form-background</p>
+          <p>.flex-item-payment-50 </p>
+          <p>.flex-item-payment-25</p>
+          <p>.element-bottom</p>
+          <p>.element</p>
+          <p>.price</p>
+          <p>.btn-basic</p>
 
 
         </section>
@@ -1309,73 +1195,74 @@
         <h3>Order Summary</h3>
 
         <h5>Rendered element:</h5>
-        <section class="flex-container-order-sum">
-              <div class="payment-form-background">
-                <h3>Order Summary</h3>
-                <div class="flex-container-order-sum">
+        <div class="flex-container">
 
-                <!--Checkout Item One-->
-                <div class="flex-container">
-                  <div class="flex-item-cart">
-                    <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-                    target="_blank">
-                      <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
-                    </a>
-                  </div>
-
-                  <div class="flex-item-lg">
-                    <a class="product-list-title" href="#">The Day You Begin</a>
-                    <a class="product-list-author" href="#">By Jacqueline Woodson</a>
-
-                    <h5 class="product-list-price">$25.99</h5>
-
-                    <label for="b1-quantity">Quantity:</label>
-                    <select class="form-drop-down" name="quantity" id="b1-quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="4">5</option>
-                    </select>
-                    <a class="btn-submit" href="#">Delete</a>
-                  </div>
+          <!-- Order Summary -->
+          <section class="flex-container-order-sum">
+            <div class="payment-form-background">
+              <h2>Order Summary</h2>
+              <div class="flex-container-order-sum">
+      
+              <!--Checkout Item One-->
+              <div class="flex-container">
+                <div class="flex-item-cart">
+                  <a href="book-single.html">
+                    <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+                  </a>
                 </div>
-
-                <!--Checkout Item One-->
-                <div class="flex-container">
-                  <div class="flex-item-cart">
-                    <a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-                    target="_blank">
-                      <img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
-                    </a>
-                  </div>
-
-                  <div class="flex-item-lg">
-                    <a class="product-list-title" href="#">The Day You Begin</a>
-                    <a class="product-list-author" href="#">By Jacqueline Woodson</a>
-
-                    <h5 class="product-list-price">$25.99</h5>
-
-                    <label for="b2-quantity">Quantity:</label>
-                    <select class="form-drop-down" name="quantity" id="b2-quantity">
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="4">5</option>
-                    </select>
-                    <a class="btn-submit" href="#">Delete</a>
-                  </div>
+      
+                <div class="flex-item-md">
+                  <a class="product-list-title" href="#">The Day You Begin</a>
+                  <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+      
+                  <h5 class="product-list-price">$25.99</h5>
+      
+                  <label class="form-label" for="b1-quantity">Quantity:</label>
+                  <select class="form-drop-down" name="quantity" id="b1-quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="4">5</option>
+                  </select>
+                  <a class="btn-submit" href="#">Delete</a>
                 </div>
               </div>
-
-              <div>
-                <div class="product-section"></div>
-                <h4 class="h4-no-margin">Sub-total: $55.90</h4>
+      
+              <!--Checkout Item One-->
+              <div class="flex-container  margin-left-payment">
+                <div class="flex-item-cart">
+                  <a href="book-single.html">
+                    <img class="checkout-img-link book-single-2-pic" src="img/books/adventure/lightning-thief.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+                  </a>
+                </div>
+      
+                <div class="flex-item-md">
+                  <a class="product-list-title" href="#">The Day You Begin</a>
+                  <a class="product-list-author" href="#">By Jacqueline Woodson</a>
+      
+                  <h5 class="product-list-price">$25.99</h5>
+      
+                  <label class="form-label" for="b2-quantity">Quantity:</label>
+                  <select class="form-drop-down" name="quantity" id="b2-quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4">5</option>
+                  </select>
+                  <a class="btn-submit" href="#">Delete</a>
+                </div>
               </div>
             </div>
+      
+            <div>
+              <div class="product-section"></div>
+              <h4 class="h4-no-margin">Sub-total: $55.90</h4>
+            </div>
+          </div>
           </section>
-
+        </div>
 
         <h5>CSS selector:</h5>
         <p>.flex-container-order-sum</p>
@@ -1389,78 +1276,6 @@
         <p>.product-section</p>
         <p>.h4-no-margin</p>
 
-        <h5>Sample code:</h5>
-        <code>
-          &lt;section class="flex-container-order-sum"><br>
-          &lt;div class="payment-form-background"><br>
-          &lt;h3>Order Summary&lt;/h3><br>
-          &lt;div class="flex-container-order-sum"><br>
-          <br>
-              <!--Checkout Item One-->
-              &lt;div class="flex-container"><br>
-              &lt;div class="flex-item-cart"><br>
-              &lt;a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-                  target="_blank"><br>
-                  &lt;img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez"><br>
-                  &lt;/a><br>
-                  &lt;/div><br>
-
-                  &lt;div class="flex-item-lg"><br>
-                  &lt;a class="product-list-title" href="#">The Day You Begin&lt;/a><br>
-                  &lt;a class="product-list-author" href="#">By Jacqueline Woodson&lt;/a><br>
-
-                  &lt;h5 class="product-list-price">$25.99&lt;/h5><br>
-
-                  &lt;label for="b1-quantity">Quantity:&lt;/label><br>
-                  &lt;select class="form-drop-down" name="quantity" id="b1-quantity"><br>
-                    &lt;option value="1">1&lt;/option><br>
-                    &lt;option value="2">2&lt;/option><br>
-                    &lt;option value="3">3&lt;/option><br>
-                    &lt;option value="4">4&lt;/option><br>
-                    &lt;option value="4">5&lt;/option><br>
-                  &lt;/select><br>
-                  &lt;a class="btn-submit" href="#">Delete&lt;/a><br>
-                  &lt;/div><br>
-                  &lt;/div><br>
-
-                  <br><br>
-
-              <!--Checkout Item One-->
-              &lt;div class="flex-container"><br>
-              &lt;div class="flex-item-cart"><br>
-              &lt;a href="https://www.penguinrandomhouse.com/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/"
-                  target="_blank"><br>
-                  &lt;img class="checkout-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez"><br>
-                  &lt;/a><br>
-                  &lt;/div><br>
-
-                  &lt;div class="flex-item-lg"><br>
-                  &lt;a class="product-list-title" href="#">The Day You Begin&lt;/a><br>
-                  &lt;a class="product-list-author" href="#">By Jacqueline Woodson&lt;/a><br>
-
-                  &lt;h5 class="product-list-price">$25.99&lt;h5><br>
-
-                  &lt;label for="b2-quantity">Quantity:&lt;/label><br>
-                  &lt;select class="form-drop-down" name="quantity" id="b2-quantity"><br>
-                  &lt;option value="1">1&lt;option><br>
-                  &lt;option value="2">2&lt;/option><br>
-                  &lt;option value="3">3&lt;/option><br>
-                  &lt;option value="4">4&lt;/option><br>
-                  &lt;option value="4">5&lt;/option><br>
-                            &lt;/select><br>
-                            &lt;a class="btn-submit" href="#">Delete&lt;/a><br>
-                            &lt;div><br>
-                            &lt;/div><br>
-            &lt;div><br>
-
-            &lt;div><br>
-            &lt;div class="product-section">&lt;/div><br>
-            &lt;h4 class="h4-no-margin">Sub-total: $55.90&lt;/h4><br>
-            &lt;/div><br>
-          &lt;div><br>
-          &lt;/section><br>
-          &lt;/div><br>
-        </code>
       </section>
 
 
@@ -1493,10 +1308,22 @@
           </section>
           </div>
 
+        <h5>CSS selector:</h5>
+        <p>.background-img</p>
+        <p>.margin-top</p>
+        <p>.flex-container-feature</p>
+        <p>.feature-background-white</p>
+        <p>.flex-item-feature-img</p>
+        <p>.feature-img-link</p>
+        <p>.flex-item-feature-txt</p>
+        <p>.product-list-title</p>
+        <p>.product-list-author</p>
+        <p>.btn-basic</p>
+
           </section>
 
         <section>
-          <h3>Footer </h3>
+          <h3>Footer</h3>
 
           <h5>Rendered element:</h5>
           <!--cite: how to format a responsive footer https://www.web-eau.net/blog/10-best-footer-html-css-snippets-->
@@ -1524,107 +1351,113 @@
           <p>.footer-list-inline</p>
           <p>.footer-list-inline-item</p>
 
-          <h5>Sample code:</h5>
-          <code>
-            &lt;div class="footer-basic"><br>
-              &lt;footer><br>
-                &lt;ul class="footer-list-inline"><br>
-                  &lt;li class="footer-list-inline-item">&lt;a href="">Books&lt;/a>&lt;/li><br>
-                  &lt;li class="footer-list-inline-item">&lt;a href="">Events&lt;/a>&lt;/li><br>
-                  &lt;li class="footer-list-inline-item">&lt;a href="">About&lt;/a>&lt;/li><br>
-                  &lt;li class="footer-list-inline-item">&lt;a href="">Contact&lt;/a>&lt;/li><br>
-
-                  &lt;li class="footer-list-inline-item">&lt;a href="index.html">Style Guide&lt;/a>&lt;/li><br>
-                  &lt;li class="footer-list-inline-item">&lt;a href="product-list-template.html">Product Template&lt;/a>&lt;/li><br>
-                  &lt;li class="footer-list-inline-item">&lt;a href="checkout-template.html">Checkout Template&lt;/a>&lt;/li><br>
-                &lt;/ul><br>
-                &lt;p class="copyright">The Book Worm © 2021&lt;/p><br>
-              &lt;/footer><br>
-            &lt;/div> <br>
-
-            </code>
-
         </section>
 
         <!--Book Header Summary-->
-<section class="element">
-  <h3> Single Book Page Listing Component </h3>
+        <section class="element">
+          <h3>Single Book Page Listing Component </h3>
 
-        <section class="flex-container-product-single">
+          <h5>Rendered element:</h5>
 
-          <div class="flex-container-feature-product-single center-content-product-single ">
-              <div class="flex-item-product-single">
-                <a href="#" target="_blank">
-                  <img class="feature-img-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
-                </a>
-              </div>
+            <section class="flex-container-product-single">
 
-              <div class="flex-item-product-single">
-                <h2 class="no-margin">The Day You Begin</h2>
-                <h3 class="no-margin">By Jacqueline Woodson</h3>
+              <div class="flex-container-feature-product-single center-content-product-single">
+                  <div class="flex-item-product-single">
+                      <img class="feature-img-no-link" src="img/sample-book.jpg" alt="The day you begin by By Jacqueline Woodson & Rafael Lopez">
+                  </div>
 
-                <div class="flex-container margin-tb-sm">
-                    <p>Aug 20, 2018 |</p>
-                    <img class="book-rating product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+                  <div class="flex-item-product-single">
+                    <h2 class="no-margin">The Day You Begin</h2>
+                    <h3 class="no-margin">By Jacqueline Woodson</h3>
+
+                    <div class="flex-container margin-tb-sm">
+                        <p>Aug 20, 2018 |</p>
+                        <img class="book-rating product-list-rating" src="img/Icons/rating.svg" alt="Four and a half starts out of 5">
+                    </div>
+
+                    <div>
+                      <p>Format Options</p>
+                      <a class="btn-reset" href="#">Hard Cover</a>
+                      <a class="btn-reset" href="#">Paperback</a>
+                    </div>
+
+                    <div>
+                      <h2 class="margin-tb-sm">$25.99</h2>
+                      <a class="margin-tb-sm btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
+                          alt="shopping cart icon"></a>
+                    </div>
+
+                  </div>
                 </div>
+            </section>
 
-                <div>
-                   <p>Format Options</p>
-                   <a class="btn-reset" href="#">Hard Cover</a>
-                   <a class="btn-reset" href="#">Paperback</a>
-                </div>
+        <h5>CSS selector:</h5>
+        <p>.flex-container-product-single</p>
+        <p>.flex-container-feature-product-single</p>
+        <p>.flex-item-product-single</p>
+        <p>.feature-img-no-link</p>
+        <p>.no-margin</p>
+        <p>.flex-container</p>
+        <p>.btn-reset</p>
+        <p>.cart-icon</p>
 
-                <div>
-                  <h2 class="margin-tb-sm">$25.99</h2>
-                  <a class="margin-tb-sm btn-add-cart" href="#">Add to Cart<img class="cart-icon" src="img/Icons/add-cart.svg"
-                      alt="shopping cart icon"></a>
-                </div>
-
-              </div>
-            </div>
-        </section>
+        
       </section>
 
       <section class="element">
-        <h3> Contact Us Element</h3>
+        <h3>Contact Us Element</h3>
 
-        <div class="margin-top background-img">
-          <section class="flex-container-center">
-              <div class="feature-background-white">
-                  <h1 class="txt-center">Send us a message...</h1>
-                  <p class="txt-center-p">Have a book you want requested? Trouble signing up for an event? Idea you think we would like? Let us know! Please fill out the form below and we will get back to you shortly.</p>
+        <h5>Rendered element:</h5>
 
-                  <form id="contactForm">
-                     <div class="flex-container-payment">
-                        <div class="flex-item-payment-50">
-                          <label for="name">Name:</label>
-                          <input type="text" id="name" name="name" placeholder="Jane Doe">
-                        </div>
-                        <div class="flex-item-payment-50 ">
-                          <label for="email">Email:</label>
-                          <input type="text" id="email" name="email" placeholder="janedoe@gmail.com">
-                        </div>
-                     </div>
-                        <div class="flex-item-lg" id="contact-message">
-                            <form method="post" action="#">
-                              <label for="message">Message:</label>
-                              <textarea class="padding-bottom" id="message" name="message" placeholder="Message"></textarea>
-                            </form>
-                        </div>
-                        <button class="btn-submit" type="submit" value="Submit">Submit</button>
-                        <button class="btn-reset" type="reset" onclick="resetClear()" value="Reset">Reset</button>
-                      </form>
-              </div>
+          <div class="margin-top">
+            <section class="flex-container-center">
+                <div class="feature-background-white">
+                    <h1 class="txt-center">Send us a message...</h1>
+                    <p class="txt-center-p">Have a book you want requested? Trouble signing up for an event? Idea you think we would like? Let us know! Please fill out the form below and we will get back to you shortly.</p>
 
-          </section>
-        </div>
+                    <form id="contactForm">
+                      <div class="flex-container-payment">
+                          <div class="flex-item-payment-50">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Jane Doe">
+                          </div>
+                          <div class="flex-item-payment-50 ">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" placeholder="janedoe@gmail.com">
+                          </div>
+                      </div>
+                          <div class="flex-item-lg" id="contact-message">
+                              <form method="post" action="#">
+                                <label for="message">Message:</label>
+                                <textarea class="padding-bottom" id="message" name="message" placeholder="Message"></textarea>
+                              </form>
+                          </div>
+                          <button class="btn-submit" type="submit" value="Submit">Submit</button>
+                          <button class="btn-reset" type="reset" onclick="resetClear()" value="Reset">Reset</button>
+                        </form>
+                </div>
+
+            </section>
+          </div>
+
+          <h5>CSS selector:</h5>
+          <p>.flex-container-center</p>
+          <p>.feature-background-white</p>
+          <p>.txt-center</p>
+          <p>.flex-container-payment</p>
+          <p>.flex-item-payment-50</p>
+          <p>.flex-item-lg</p>
+          <p>.btn-reset</p>
+          <p>.btn-reset</p>
 
 
       </section>
-</section>
+
 
       <section class="element">
-        <h3> Title Component <h3>
+        <h3>Title Component <h3>
+        
+        <h5>Rendered element:</h5>
 
           <div class="margin-top background-img">
               <section class="flex-container-center">
@@ -1643,18 +1476,33 @@
               </section>
             </div>
 
+        <h5>CSS selector:</h5>
+        <p>.margin-top</p>
+        <p>.background-img</p>
+        <p>.flex-container-center</p>
+        <p>.eature-background-white"</p>
+        <p>.txt-center</p>
+        <p>.btn-basic</p>
+
       </section>
 
       <section class="element">
-        <h3> Calendar</h3>
+        <h3>Calendar</h3>
 
-<div class="elfsight-app-457da460-c3ce-4342-b268-b4f0dc49b19f"></div>
+        <h5>Rendered element:</h5>
+
+          <div class="elfsight-app-457da460-c3ce-4342-b268-b4f0dc49b19f"></div>
+
+        <h5>CSS selector:</h5>
+        <p>.elfsight-app-457da460-c3ce-4342-b268-b4f0dc49b19f</p>
 
       </section>
 
 
       <section class="element">
-        <h3> Event Component <h3>
+        <h3>Event Component <h3>
+
+        <h5>Rendered element:</h5>
 
           <section class="flex-container-center">
             <div class="flex-container-event feature-background-event">
@@ -1668,122 +1516,47 @@
             </div>
           </section>
 
+          <h5>CSS selector:</h5>
+          <p>.flex-container-center</p>
+          <p>.flex-container-event</p>
+          <p>.feature-background-event</p>
+          <p>.feature-background-white"</p>
+          <p>.event-img</p>
+          <p>.flex-item-md</p>
+          <p>.btn-basic</p>
+
 
       </section>
 
+    </section><!-- // COMBINED ELEMENTS SECTION -->
 
-      </section><!-- // COMBINED ELEMENTS SECTION -->
-
-
-
-
-
-
-    <section id="citations">
-      <h2>Citations</h2>
-
-      <ul>
-        <li class="ul-li">Edgar Tolentino (Designer). Pablo Impallari (Designer). (2011). <strong>Dosis [Font]</strong>. Retrieved from <a
-            href="https://fonts.google.com/specimen/Dosis?preview.text_type=custom#standard-styles">https://fonts.google.com/specimen/Dosis?preview.text_type=custom#standard-styles</a>
-        </li>
-
-        <li class="ul-li">Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a
-          href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
-      </li>
-
-        <!-- <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li> -->
-
-        <li class="ul-li">Helmine Serban (Professor) (2021). <strong>Lecture Slides and Example Code</strong>.</li>
-
-        <li class="ul-li">Alyssa Lalani (Student) (2021) <strong>All Brand Imagery [Image (svg)]</strong> </li>
-
-        <li class="ul-li">Freepik. (Designer). (n.d). <strong>Shopping Cart [Icon (svg)]</strong>. Retrieved from <a href="https://www.flaticon.com/free-icon/shopping-cart_1170627?term=cart&page=1&position=10&page=1&position=10&related_id=1170627&origin=search">https://www.flaticon.com/free-icon/shopping-cart_1170627?term=cart&page=1&position=10&page=1&position=10&related_id=1170627&origin=search</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>CSS Google Fonts [tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/css/css_font_google.asp">https://www.w3schools.com/css/css_font_google.asp</a>.</li>
-
-        <li class="ul-li">Pete LePage & Rachel Andrew. (Designers). (2019). <strong>Responsive Web Basics</strong>. Retrieved from <a href="https://web.dev/responsive-web-design-basics/">https://web.dev/responsive-web-design-basics/</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>HTML links [tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/html/html_links.asp">https://www.w3schools.com/html/html_links.asp</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>HTML Entities [tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/html/html_entities.asp">https://www.w3schools.com/html/html_entities.asp</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>HTML Forms [tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/html/html_forms.asp">https://www.w3schools.com/html/html_forms.asp</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>Tag Input [tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/tags/tag_input.asp">https://www.w3schools.com/tags/tag_input.asp</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>Tag Input Radio [tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/tags/att_input_type_radio.asp">https://www.w3schools.com/tags/att_input_type_radio.asp</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>HTML Forms [tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/html/html_forms.asp">https://www.w3schools.com/html/html_forms.asp</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>CSS Custom Checkbox [tutorial & example]</strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_custom_checkbox.asp">https://www.w3schools.com/howto/howto_css_custom_checkbox.asp</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>HTML Image as Link [tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/html/html_images.asp">https://www.w3schools.com/html/html_images.asp</a>.</li>
-
-        <li class="ul-li">Jacqueline Woodson (Author). Rafael Lopez. (Illustrator). (2018). <strong>The Day You Begin [Image & Book]</strong>. Retrieved from <a href="https://www.penguinrandomhouse.ca/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/9780399246531">https://www.penguinrandomhouse.ca/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/9780399246531</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>HTML Lists [tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/html/html_lists.asp">https://www.w3schools.com/html/html_lists.asp</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>Checkout Order Form [tutorial & example]</strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_checkout_form.asp">https://www.w3schools.com/howto/howto_css_checkout_form.asp</a>.</li>
-
-        <li class="ul-li">Ayooluwa Isaiah. (Software Developer). (2020). <strong>How to build a Navigation Bar with CSS Flexbox [tutorial & example]</strong>. Retrieved from <a href="https://freshman.tech/flexbox-navbar/">https://freshman.tech/flexbox-navbar/</a>.</li>
-
-        <li class="ul-li">css-tricks. (Tutorials). (2018). <strong>Flex Basis [tutorial & example]</strong>. Retrieved from <a href="https://css-tricks.com/almanac/properties/f/flex-basis/">https://css-tricks.com/almanac/properties/f/flex-basis/</a>.</li>
-
-        <li class="ul-li">Levin Mejia. (Designer). (2017). <strong>Designing A Product Page Layout with Flexbox [tutorial & example]</strong>. Retrieved from <a href="https://css-tricks.com/designing-a-product-page-layout-with-flexbox/">https://css-tricks.com/designing-a-product-page-layout-with-flexbox/</a>.</li>
-
-        <li class="ul-li">css-tricks. (Tutorials). (2017). <strong>Flexbox Page Layout [tutorial & example]</strong>. Retrieved from <a href="https://css-tricks.com/designing-a-product-page-layout-with-flexbox/">https://css-tricks.com/designing-a-product-page-layout-with-flexbox/</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>CSS Full Bleed [tutorial]</strong>. Retrieved from <a href="https://css-tricks.com/full-bleed/">https://css-tricks.com/full-bleed/</a>.</li>
-
-        <li class="ul-li">Stephanie Eckles. (Developer). (2020). <strong>Icon Button CSS Styling Guide [tutorial & example]</strong>. Retrieved from <a href="https://moderncss.dev/icon-button-css-styling-guide">https://moderncss.dev/icon-button-css-styling-guide</a>.</li>
-
-        <li class="ul-li">Shay Howe. (Designer). (n.d). <strong>Building Forms [tutorial & example]</strong>. Retrieved from <a href="https://learn.shayhowe.com/html-css/building-forms/">https://learn.shayhowe.com/html-css/building-forms/</a>.</li>
-
-        <li class="ul-li">w3schools. (Tutorials). (n.d). <strong>CSS Placeholder [tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_placeholder.asp">https://www.w3schools.com/howto/howto_css_placeholder.asp</a>.</li>
-        <!--cite: how to format a responsive footer https://www.web-eau.net/blog/10-best-footer-html-css-snippets-->
-
-        <li class="ul-li">Daniel Dubois. (Designer). (2020). <strong>Best Footer HTML & CSS [tutorial & example]</strong>. Retrieved from <a href="https://www.web-eau.net/blog/10-best-footer-html-css-snippets">https://www.web-eau.net/blog/10-best-footer-html-css-snippets</a>.</li>
-
-      </ul>
-
+    <section><!-- // back to top LINK -->
+      <div class="footer-back-top">
+        <a class="btn-basic" href="#top">Back to top</a>
+      </div>
     </section>
 
-    <div class="footer-back-top">
-      <a class="btn-basic" href="#top">Back to top</a>
+    <!--Footer-->
+    <div class="footer-basic">
+      <footer>
+          <ul class="footer-list-inline">
+            <li class="footer-list-inline-item"><a href="index.html">Home</a></li>
+            <li class="footer-list-inline-item"><a href="book-listing.html">Books</a></li>
+            <li class="footer-list-inline-item"><a href="events.html">Events</a></li>
+            <li class="footer-list-inline-item"><a href="about.html">About</a></li>
+            <li class="footer-list-inline-item"><a href="contact.html">Contact</a></li>
+
+              <li class="footer-list-inline-item"><a href="style-guide.html">Style Guide</a></li>
+              <li class="footer-list-inline-item"><a href="citations.html">Citations</a></li>
+              <li class="footer-list-inline-item"><a href="product-list-template.html">Product Template</a></li>
+              <li class="footer-list-inline-item"><a href="checkout-template.html">Checkout Template</a></li>
+          </ul>
+          <p class="copyright">The Book Worm © 2021</p>
+      </footer>
     </div>
 
-
-
+    
 </body>
 
 </html>
 
-
-        <!--cite: shopping cart icon https://www.flaticon.com/free-icon/shopping-cart_1170627?term=cart&page=1&position=10&page=1&position=10&related_id=1170627&origin=search-->
-        <!--cite: how to change fonts used by google via link from https://www.w3schools.com/css/css_font_google.asp-->
-        <!--cite: how to change meta viewport from https://web.dev/responsive-web-design-basics/-->
-        <!-- cite: how to open links in a new tab from https://www.w3schools.com/html/html_links.asp-->
-        <!--cite: how to use entities to get the code to correctly write without tags from https://www.w3schools.com/html/html_entities.asp-->
-        <!--cite: input type for sumbit button from https://www.w3schools.com/html/html_forms.asp-->
-        <!--cite: how to create a text field and label from https://www.w3schools.com/tags/tag_input.asp-->
-        <!--HTML radio button input type and example form from https://www.w3schools.com/tags/att_input_type_radio.asp-->
-        <!--HTML example form types from hhttps://www.w3schools.com/html/html_forms.asp-->
-        <!--cite: how to style checkboxes from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp-->
-        <!--cite: how to use an image as a link (wrap in a href tags) from https://www.w3schools.com/html/html_images.asp-->
-        <!--cite: childrens book image from https://www.penguinrandomhouse.ca/books/299104/the-day-you-begin-by-jacqueline-woodson-illustrated-by-rafael-lopez/9780399246531-->
-        <!--cite: how to create an order list from https://www.w3schools.com/html/html_lists.asp-->
-        <!--cite: how to create a checkout form from https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
-        <!-- cite flexblox navbar right aligned from https://freshman.tech/flexbox-navbar/-->
-        <!--
-        /* cite: how to use flex basis from https://css-tricks.com/almanac/properties/f/flex-basis/ */
-        /* cite: how to make a product layout from https://css-tricks.com/designing-a-product-page-layout-with-flexbox/ */
-        /* cite: how to use flex basis from https://css-tricks.com/almanac/properties/f/flex-basis/ */
-        /* cite: used this form as an example structure from https://www.w3schools.com/howto/howto_css_checkout_form.asp */
-        /* cite: full image bleed from https://css-tricks.com/full-bleed/ */
-        /* cite: how to add icon to button from https://moderncss.dev/icon-button-css-styling-guide */
-        /* cite: how to style a form from https://learn.shayhowe.com/html-css/building-forms/ by Shay Howe*/
-        /* cite: how to remove focus border from https://stackoverflow.com/questions/3397113/how-to-remove-focus-border-outline-around-text-input-boxes-chrome*/
-        /* cite: how to style a form from https://learn.shayhowe.com/html-css/building-forms/ by Shay Howe*/
-        /* cite: how to change style of placeholder text https://www.w3schools.com/howto/howto_css_placeholder.asp*/
-        -->
-        <!--cite: how to format a responsive footer https://www.web-eau.net/blog/10-best-footer-html-css-snippets-->
